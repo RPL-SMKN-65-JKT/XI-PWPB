@@ -1,0 +1,134 @@
+.audio {
+    width: 90%;
+    outline: none;
+    opacity: .5;
+}
+.judul-lagu,
+.penyanyi {
+    font-family: arial;
+    font-weight: bold;
+    margin-top: 35px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+.penyanyi {
+    font-weight: normal;
+    margin-top: 15px;
+    color: rgba(238, 236, 236, 0.7);
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100vh;
+    background: black url(truedamage.png)no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    box-shadow: rgba(84, 85, 85, 0.1)6px 2px 16px 0px,
+    rgba(84, 85, 85, 0.1) -6px -2px 16px 0px;
+    width: 380px;
+    position: relative;
+    margin-top: -50px;
+    height: 240px;
+    z-index: 100;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    position:relative;
+    left: 530px;
+    bottom:0px;
+}
+
+
+
+@media screen and (max-widht: 1150px){
+    .box {
+        transform: scale(.9);
+        backdrop-filter: blur(20px);
+    }
+}
+
+@media screen and (max-widht: 1000px){
+    body{
+        background-position: -70px 0px;
+
+    }
+}
+
+@media screen and (max-widht: 900px){
+    .box {
+        transform: scale(.8);
+    }
+}
+
+@media screen and (max-widht: 850px){
+    body{
+        background-position: -70px 0px;
+    }
+}
+
+@media screen and (max-widht: 750px){
+    .box {
+        transform: scale(.7);
+    }
+    body {
+        background-position: -100px 0px;
+    }
+}
+
+@media screen and (max-widht: 750px){
+    body{
+        background-position: -150px 0px;
+    }
+}
+
+@media screen and (max-widht: 600px){
+    body{
+        background-position: -350px 0px;
+    }
+    .box{
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+@media screen and (max-width: 360px){
+    .box{
+        position: absolute;
+    }
+}
+
+@media screen and (max-widht: 330px){
+    .box {
+        transform: scale(.6);
+    }
+}
+
+@media screen and (max-widht: 275px){
+    .box {
+        transform: scale(.5);
+    }
+}
+
+@media screen and (max-widht: 275px){
+    .box {
+        transform: scale(.4);
+    }
+}
+
+@media screen and (max-widht: 230px){
+    .box {
+        transform: scale(.3);
+    }
+}
