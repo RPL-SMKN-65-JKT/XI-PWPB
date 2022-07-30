@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Red+Hat+Mono&display=swap');
+
+body{
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+.hh1{
+    text-align: center;
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.channels{
+    border-color: #FFC500;
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.link:hover{
+    color: #FFC500;
+}
+.pbuat{
+    font-size: 40px;
+}
+.lalan{
+    width: 200px;
+    height: 200px;
+}
+.image{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+section img{
+    border-radius: 100%;
+    border: 5px solid #FFC500;
+    text-align: center;
+}
