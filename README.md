@@ -1,6 +1,8 @@
 # Pemesanan_Tiket
 Buatlah sebuah website yang bertema pemesanan tiket dengan menggunakan HTML + CSS + JavaScript (Bonus Nilai)
 
+# Due date & presentasi: Rabu, 10 Agustus 2022
+
 ## List_Kelompok
 * Kelompok 1 (Aro)    : Pemesanan Tiket Pesawat
 * Kelompok 2 (Aidhil) : Pemesanan Hotel
@@ -10,7 +12,9 @@ Buatlah sebuah website yang bertema pemesanan tiket dengan menggunakan HTML + CS
 * Kelompok 6 (Maryani): Pemesanan Tiket Bus
 * Kelompok 7 (Robby)  : Pemesanan Tiket Konser
 
-# Due date & presentasi: Rabu, 10 Agustus 2022
+## Reading Material
+* [git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+* [markdown cheat sheet](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)
 
 ## THINGS YOU HAVE TO KNOW
 * Kelompok terdiri dari 5 orang (hanya 1 kelompok yang terdiri dari 4 orang)
