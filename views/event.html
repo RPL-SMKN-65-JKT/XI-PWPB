@@ -1,0 +1,46 @@
+<html >
+<head>
+    <title>Event</title>
+    <link rel="stylesheet" href="css/event.css">
+</head>
+<body>
+    <section>
+        <div class="container-navbar">
+        <div class="header">
+            <a href="/anggota" ><img src="source/hololg.png" class="logo" alt=""></a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/members">Members</a></li>
+                <li><a href="/event">Event</a></li>
+                {{if eq .Login "true"}}
+                    <li><a href="/account">Account</a></li>
+                {{end}}
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- about start -->
+    <div class="container-event">
+        <img src="source/event.webp" alt=""class="eventlg">
+        <div class="event">
+            <h3>EVENT hololive ID</h3>
+            <div class="info">
+            <p>Location: Mall Bassura City</p> <br>
+            <p>Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Wednesday, August 24th 2022</p> <br>
+            <p>Time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 4PM -> 7PM</p> <br>
+            <p>"Event ini bertujuan untuk meningkatkan komunitas VTuber di seluruh Jakarta menjadi lebih baik lagi. Rangkaian acaranya ada cosplay, foto bersama cosplayer, merchandise, J-food, games, dll"</p> <br>
+           
+            </div>
+            {{if .Login}}
+            <a href="/ticket" class="h3">Beli ticket disini!</a>
+            {{else}}
+            <a href="/signup" class="h3">Daftar Sekarang!</a>
+            {{end}}
+        </div>
+    </div>
+
+<!-- about  end  -->
+</body>
+</html>

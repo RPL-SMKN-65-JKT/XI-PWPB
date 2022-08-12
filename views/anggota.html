@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/members.css">
+    <title>Anggota</title>
+</head>
+<body>
+    <section>
+        <div class="container-navbar">
+            <div class="header">
+                <a href="/anggota" ><img src="source/hololg.png" class="logo" alt=""></a>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/members">Members</a></li>
+                    <li><a href="/event">Event</a></li>
+                    {{if eq .Login "true"}}
+                        <li><a href="/account">Account</a></li>
+                    {{end}}
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <div class="con-anggota">
+        <div class="a">
+            <img src="source/ambisius.jfif" alt="" class="cuy">
+            <h3 class="nama">KELOMPOK AMBISIUS CUY</h3>
+            <pre>
+                1. Alan Pratama Rusfi
+                2. Arva Revanza
+                3. Muhammad Arif Ibrahim
+                4. Muhammad Zufar
+            </pre>
+        </div>
+    </div>
+
+</body>
+</html>

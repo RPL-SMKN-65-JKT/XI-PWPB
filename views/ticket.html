@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Tickets</title>
+    <link rel="stylesheet" href="css/tiket.css">
+</head>
+<body>
+        <section>
+            <div class="container-navbar">
+            <div class="header">
+                <a href="/anggota" ><img src="source/hololg.png" class="logo" alt=""></a>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/members">Members</a></li>
+                    <li><a href="/event">Event</a></li>
+                    {{if eq .Login "true"}}
+                        <li><a href="/account">Account</a></li>
+                    {{end}}
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <table class="tok" cellspacing="30">
+        <tr>
+            <td>
+                <div class="pop" id="standar" onclick="buy_silver()">
+                    <h1>SILVER CARD</h1>
+                    <h2>Rp.7xx.xxx</h2>
+                    <br>
+                    <h3 style="text-align: left;">What you get:</h3>
+                    <ul style="text-align: left;">
+                        <li>Foto</li>
+                        <li>Merch</li>
+                        <li>Sticker</li>
+                    </ul>
+                    <h1 style="margin-top: 35%;">Click To Buy!</h1>
+                </div>
+            </td>
+            <td>
+                <div class="pop" id="VIP" onclick="buy_gold()">
+                    <h1>GOLD CARD</h1>
+                    <h2>Rp.1.7xx.xxx</h2>
+                    <br>
+                    <h3 style="text-align: left;">What you get:</h3>
+                    <ul style="text-align: left;">
+                        <li>All silver items</li>
+                        <li>Action Figure</li>
+                        <li>Special meet with Kobo Kanaeru</li>
+                    </ul>
+                    <h1 style="margin-top: 35%;">Click To Buy!</h1>
+                </div>
+                </div>
+            </td>
+        </tr>
+   </table>
+
+   <script>
+    function buy_silver() {
+        location.href = "http://localhost:3030/buy?ticket=silver"
+    }
+    function buy_gold() {
+        location.href = "http://localhost:3030/buy?ticket=gold"
+    }
+   </script>
+</body>
+</html>

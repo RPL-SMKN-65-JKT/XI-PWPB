@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>MyAccount</title>
+    <link rel="stylesheet" href="css/tiket.css">
+</head>
+<body>
+        <section>
+            <div class="container-navbar">
+            <div class="header">
+                <a href="/anggota" ><img src="source/hololg.png" class="logo" alt=""></a>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/members">Members</a></li>
+                    <li><a href="/event">Event</a></li>
+                    {{if eq .Login "true"}}
+                        <li><a href="/logout">Log out</a></li>
+                    {{end}}
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <table class="tok" cellspacing="30">
+        {{if eq .HaveTicket "true"}}
+        <tr>
+            <td>
+                <div class="pop" style="background-color: transparent !important; box-shadow:none;" onclick="Event()">
+                    <h1>You doesn't have any ticket yet</h1>
+                </div>
+            </td>
+        </tr>
+        {{end}}
+
+        <tr>
+            {{if gt .SilverAmount 0}}
+            <td>
+                <div class="pop" id="standar">
+                    <h1>{{.SilverAmount}}x SILVER CARD</h1>
+                    <img src="source/qr_example.jpg" alt="x" height="200px" width="200px">
+                    <h4 style="text-align: left; margin-top: 5%;">Show this barcode to cashier</h4>
+                    <h6 style="text-align: left;">DO NOT SHOW BARCODE TO ANYONE!</h6>
+                </div>
+            </td>
+            {{end}}
+
+            {{if gt .GoldAmount 0}}
+            <td>
+                <div class="pop" id="VIP">
+                    <h1>{{.GoldAmount}}x GOLD CARD</h1>
+                    <img src="source/qr_example.jpg" alt="x" height="200px" width="200px">
+                    <h4 style="text-align: left; margin-top: 5%;">Show this barcode to cashier</h4>
+                    <h6 style="text-align: left;">DO NOT SHOW BARCODE TO ANYONE!</h6>
+                </div>
+                </div>
+            </td>
+            {{end}}
+        </tr>
+   </table>
+
+   <script>
+        function Event() {
+            location.href = "http://localhost:3030/ticket"
+        }
+   </script>
+</body>
+</html>

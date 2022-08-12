@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>About Hololive</title>
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+        <section>
+            <div class="container-navbar">
+            <div class="header">
+                <a href="/anggota" ><img src="source/hololg.png" class="logo" alt=""></a>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/members">Members</a></li>
+                    <li><a href="/event">Event</a></li>
+                    {{if eq .Login "true"}}
+                        <li><a href="/account">Account</a></li>
+                    {{end}}
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- about start -->
+    
+    <div class="container-about">
+        <img src="source/about.webp" alt="" class="holo">
+        <div class="about">
+            <h3>About hololive production</h3>
+            <p>hololive production adalah agensi VTuber (Virtual Tuber) yang terkenal di seluruh penjuru dunia dan telah memiliki lebih dari 50 juta penggemar. Agensi bertugas mengaudisi para calon VTuber dan membantu apa yang diperlukan dalam karirnya, seperti desain dan suara karakter.</p>
+        </div>
+    </div>
+    <!-- about end -->
+</body>
+</html>
