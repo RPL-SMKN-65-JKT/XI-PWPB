@@ -8,7 +8,7 @@ Anggota Kelompok Ambisius:
 
 program yang dibutuhkan:
 * [xampp / mysql](https://www.apachefriends.org/download.html)
-* [program ticket kelompok ambisius zip](https://www.mediafire.com/file/ulhj0vioho0nwjb/event-hololive1.zip/file)
+* [program ticket kelompok ambisius zip](https://www.mediafire.com/file/5tt6fjes5xkntmn/event-hololive1.zip/file)
 
 Setup Program:
 
@@ -26,11 +26,11 @@ CREATE DATABASE hololive;
  `name` VARCHAR(255) NOT NULL ,
  `password` VARCHAR(255) NOT NULL ,
  `silver_card` INT(10) NOT NULL ,
- `golden_card` INT(10) NOT NULL ,
+ `gold_card` INT(10) NOT NULL ,
  PRIMARY KEY (`id`)) ENGINE = InnoDB;
  ```
  
- 3. Extract [program ticket kelompok ambisius](https://www.mediafire.com/file/ulhj0vioho0nwjb/event-hololive1.zip/file)
+ 3. Extract [program ticket kelompok ambisius](https://www.mediafire.com/file/5tt6fjes5xkntmn/event-hololive1.zip/file)
  
  4. Jalankan 'event-hololive.exe'
  
