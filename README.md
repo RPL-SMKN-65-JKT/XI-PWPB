@@ -8,7 +8,7 @@ Anggota Kelompok Ambisius:
 
 program yang dibutuhkan:
 * [xampp / mysql](https://www.apachefriends.org/download.html)
-* [program ticket kelompok ambisius](https://www.mediafire.com/file/rbnnmdmhm71dbvm/event-hololive.exe/file)
+* [program ticket kelompok ambisius zip](https://www.mediafire.com/file/ulhj0vioho0nwjb/event-hololive1.zip/file)
 
 Setup Program:
 
@@ -30,8 +30,8 @@ CREATE DATABASE hololive;
  PRIMARY KEY (`id`)) ENGINE = InnoDB;
  ```
  
- 3. Jalankan [program ticket kelompok ambisius](https://www.mediafire.com/file/rbnnmdmhm71dbvm/event-hololive.exe/file)
+ 3. Extract [program ticket kelompok ambisius](https://www.mediafire.com/file/ulhj0vioho0nwjb/event-hololive1.zip/file)
  
- 4. Buka [localhost:3030](http://localhost:3030/)
-
-Note: [Program](https://www.mediafire.com/file/rbnnmdmhm71dbvm/event-hololive.exe/file) , [folder source](./source) dan [folder css](./css) harus ada di folder yg sama
+ 4. Jalankan 'event-hololive.exe'
+ 
+ 5. Buka [localhost:3030](http://localhost:3030/)
