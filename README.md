@@ -33,3 +33,5 @@ CREATE DATABASE hololive;
  3. Jalankan [program ticket kelompok ambisius](https://www.mediafire.com/file/rbnnmdmhm71dbvm/event-hololive.exe/file)
  
  4. Buka [localhost:3030](http://localhost:3030/)
+
+Note: [Program](https://www.mediafire.com/file/rbnnmdmhm71dbvm/event-hololive.exe/file) , [folder source](./source) dan [folder css](./css) harus ada di folder yg sama
