@@ -301,7 +301,7 @@ func postSignup(c *fiber.Ctx) error {
 		})
 	}
 
-	_, err = db.Exec("INSERT INTO user (id, name, password, email) VALUES (?,?,?,?)", "", name, password, "")
+	_, err = db.Exec("INSERT INTO user (id, name, password) VALUES (?,?,?)", "", name, password)
 	if err != nil {
 		log.Fatal("failed insert to database")
 		return c.SendStatus(http.StatusInternalServerError)
