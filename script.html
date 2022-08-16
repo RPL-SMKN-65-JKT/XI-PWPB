@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>INDEX</title>
+ <link rel="stylesheet" href="script.css">
+</head>
+<body>
+<form>
+ <h4>PEMESANAN TIKET BIOSKOP</h4>
+  <table>
+  <tr>
+   <td><label>NAMA STUDIO</label></td>
+   <td>: <input type="text" id="inp_nama studio"></td>
+  
+  </tr>
+  <tr>
+  <tr>
+    <td><label>JAM TAYANG</label></td>
+    <td>
+     : <select onchange="JAMTAYANG()" id="inp_jam tayang">
+     <option value="13.00-15.00">13.00-15.00</option>
+     <option value="17.00-19.00">17.00-19.00</option>
+     <option value="21.00-23.00">21.00-23.00</option>
+     </select>
+    </td>
+   </tr>
+  <tr>
+   <td><label>JUDUL FILM</label></td>
+   <td>
+    : <select onchange="JUDULFILM()" id="inp_judul film">
+    <option value="IVANNA">IVANNA</option>
+    <option value="GOZILLA">GOZILLA</option>
+    <option value="PENGABDI SETAN 2">PENGABDI SETAN 2</option>
+    <option value="KELUARGA CEMARA">KELUARGA CEMARA</option>
+    <option value="MAKMUM 2">MAKMUM 2</option>
+    <option value="KKN DI DESA PENARI">KKN DI DESA PENARI</option>
+    <option value="SUSAH SINYAL">SUSAH SINYAL</option>
+    </select>
+   </td>
+  </tr>
+  <tr>
+   <td><label>KURSI</label></td>
+   <td>
+    : <select onchange="KURSI()" id="inp_bangku">
+    <option>--SEAT--</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="F">F</option>
+    <option value="G">G</option>
+    <option value="H">H</option>
+    
+    
+    </select>
+   </td>
+  </tr>
+  <tr>
+   <td><label>HARGA TIKET</label></td>
+   <td>: <input type="text" id="tampil"></td>
+  <tr>
+   <td><label>JUMLAH</label></td>
+   <td>: <input onkeyup="Total()" type="number" id="inp_jumlah" name=""></td>
+  </tr>
+  <tr>
+   <td><label>TOTAL</label></td>
+   <td>: <input type="text" id="total2"></td>
+  </tr>
+  </table>
+  <center><input type="button" value="PESAN" onclick="pesan()" name=""></center>
+</form>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

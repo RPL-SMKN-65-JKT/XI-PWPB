@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", "Times", sans-serif;
+   }
+   body{
+    background-image: url(aku.jpg);
+   }
+   form{
+    margin: 120px auto;
+    width: 500px;
+    background: gray;
+    border-radius: 5px;
+   }
+   
+   fieldset{
+    padding: 10px;
+   }
+   label{
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+   }
+   fieldset{
+    font-weight: bold;
+   }
+   
+   input[type='number'],input[type='text']{
+    padding: 4px;
+    width: 20em;
+    margin-bottom: 10px;
+    background-color: #efefef;
+    border:none;
+    border-radius: 2px;
+   }
+   select{
+    padding: 2px;
+    margin-bottom: 10px;
+   }
+   h4{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: blue;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    width: 102%;
+    margin-left: -10px;
+   }
+   input[type='button']{
+    margin-bottom: 20px;
+    background-color: blue;
+    border:none;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+   }
+   
+   
+   
