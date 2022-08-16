@@ -1,0 +1,41 @@
+<html>
+<head>
+<!--Membuat Judul-->
+<title>PARAMETER DALAM FUNGI</title>
+<!--Untuk memasukkan JAVASCRIPT ke dalam HTML-->
+<script language="javascript">
+//Untuk membungkus suatu proses agar tidak ditulis berulang kali//
+function warning(pesan_kita)
+{
+//Menampilkan pesan kepada pengguna//
+    alert(pesan_kita);
+}
+//Untuk membungkus suatu proses agar tidak ditulis berulang kali//
+function password(pesan_prompt,pesan_sukses,pesan_gagal)
+{
+//Fungsi var yaitu untuk menyimpan suatu nilai//
+    var passwd=prompt(pesan_prompt);
+//Fungsi if untuk menjalankan suatu program//
+    if(passwd!='petugas')
+{
+//Menampilkan pesan kepada pengguna//
+alert(pesan_gagal);
+}
+//Fungsi else memilih salah satu dari beberapa blok kode//
+else
+{
+//Menampilkan pesan kepada pengguna//
+    alert(pesan_sukses);
+}
+}
+warning("GAK USAH KEPO");
+password("Masukan PASSWORD: ","BISA" ,"DIBILANGIN JANGAN");
+</script>
+</head>
+<body onload="warning('Dilarang Masuk Selain Petugas');">
+<p><b>TEMPAT RAHASIA</b></p>  
+<p>Sekali lagi saya tegaskan jangan memasuki area ini selain petugas.
+BERBAHAYA!!!</p>
+<a href="javascript: password('Masukan Password:','Password Benar!','Password Salah');">Masuk =></a>
+</body>
+</html>
