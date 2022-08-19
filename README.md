@@ -1,7 +1,7 @@
 # Pemesanan_Tiket
-Buatlah sebuah website yang bertema pemesanan tiket dengan menggunakan HTML + CSS + JavaScript (Bonus Nilai)
+Buatlah sebuah website yang bertema pemesanan tiket dengan menggunakan HTML + CSS + JavaScript
 
-# Due date & presentasi: Rabu, 10 Agustus 2022
+# Due date & presentasi: Rabu, 24 Agustus 2022
 
 ## List_Kelompok
 * Kelompok 1 (Aro)    : Pemesanan Tiket Pesawat
@@ -18,8 +18,9 @@ Buatlah sebuah website yang bertema pemesanan tiket dengan menggunakan HTML + CS
 
 ## THINGS YOU HAVE TO KNOW
 * Kelompok terdiri dari 5 orang (hanya 1 kelompok yang terdiri dari 4 orang)
-* Desain web bebas buat sekreatif mungkin dengan menggunakan HTML + CSS + JavaScript (Bonus Nilai)
+* Desain web bebas buat sekreatif mungkin dengan menggunakan HTML + CSS + JavaScript
 GANBATTE!
+* Ada proses register, login, dan printing tiket
 * Dikumpulkan melalui github dengan branch Pemesanan_Tiket dengan format file :
 Nama Kelompok_Tugas3
 * Create PullRequest, Nama Kelompok_Tugas
