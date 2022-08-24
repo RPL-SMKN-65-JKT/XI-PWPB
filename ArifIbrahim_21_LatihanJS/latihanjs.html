@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Arif Ibrahim_21</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function warning(pesan_kita) { // membuat function bernama warning dengan parameter pesan_kita
+            alert(pesan_kita); // meng-alert pesan_kita
+        }
+
+        function password(pesan_prompt, pesan_sukses, pesan_gagal) { // membuat function bernama password dengan parameter pesan_prompt, pesan_sukses, pesan_gagal
+            var password = prompt(pesan_prompt); // menampilkan pesan_prompt dan mengambil input dari user lalu menyimpan input user dalam variabel password
+            if (password != 'arif') { // membandingkan jika password (input user yang tadi ditampung) jika tidak sama dengan (!=) 'arif'
+                alert(pesan_gagal); // maka mengalert pesan_gagal
+            }else { // selain dari kondisi if maka..
+                alert(pesan_sukses) // maka alert pesan_sukses
+            }
+        }
+    </script>
+</head>
+<body onload="warning('khusus arif!!')" class="lah"> <!-- saat load selesai maka memanggil function warning yang telah dibuat diatas -->
+    <a href="javascript: password('masukan password:', 'oke kamu arif', 'kamu bukan arif!')">Khusus Arif!!</a> <!-- menampilkan link 'Khusus Arif!!', ketika di click maka akan mengarahkan ke javacript yang memanggil function password -->
+</body>
+</html>

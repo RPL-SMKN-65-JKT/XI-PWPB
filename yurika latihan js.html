@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <title>Alert ifelse</title> 
+  <script language="javascript">
+        function warning(pesan_kita) {
+            alert(pesan_kita);
+        }
+        function password(pesan_prompt, pesan_sukses, pesan_gagal){
+            var password = prompt(pesan_prompt);
+            if (password !='akukamu'){
+            alert(pesan_gagal);
+        }
+        else{
+            alert(pesan_sukses);
+        }
+    }
+</script> 
+ </head> 
+ <body onload="warning('Dilarang Masuk Kecuali Admin');"> 
+  <center> 
+   <p><b>TEMPAT RAHASIA</b></p> <a href="javascript: password('Masukan Password: ', 'Password Benar', 'Password Salah');">MASUK</a> 
+  </center> 
+ 
+</body></html>
