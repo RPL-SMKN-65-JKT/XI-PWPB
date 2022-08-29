@@ -1,14 +1,10 @@
 # XI-PWPB-CEK-BRANCH-BARU-YGY
 
-Buatlah sebuah website yang berisikan daftar album lagu dari beberapa grup band atau penyanyi solo berupa audio maupun video!
-Jumlah grup band/penyanyi solo berdasarkan jumlah anggota kelompok masing-masing.
-1 Kelompok terdiri dari 5 orang (hanya 1 kelompok yang terdiri dari 4 orang)
-Desain web bebas buat sekreatif mungkin. GANBATTE!
+Nama Kelompok : SLEBEW GROUP
 
-Due date: 1 Agustus 2022
-
-Dikumpulkan melalui github dengan format file :
-Nama Kelompok_Tugas2 
-
-Create PullRequest, Nama Kelompok_Tugas
-Create Readme.md (untuk list nama anggota kelompok)
+Nama Anggota :
+- Fian Kurniawan (14)
+- Fathul Bari (13)
+- Pratama Ridho (28)
+- M.Revikhasha (22)
+- Zikry Riedwan (34)
