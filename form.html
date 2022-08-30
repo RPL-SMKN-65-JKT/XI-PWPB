@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Tugas FORM</title>
+    </head>
+    <body>
+        <form>
+            <!-- tabel untuk buat tabel -->
+            <table border="0" cellpadding="5" cellsapcing="0">
+                <!-- tabel untuk niwn -->
+                <tr>  
+                    <td>
+                        <label for="ID">NISN:</label>
+                    </td>
+                    <td>
+                        <input type="number" name="ID">
+                    </td>   
+                </tr>
+                <!-- tabel untuk username -->
+                <tr>
+                    <td>
+                        <label for="username">MASUKAN NAMA:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="username">
+                    </td>
+                </tr>
+                <!-- tabel untuk alamat -->
+                <tr>
+                    <td>
+                        <label for="alamat">ALAMAT:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="alamat">
+                    </td>
+                </tr>
+                <!-- gender -->
+                <tr>
+                    <td>
+                        <label for="gender">Jenis kelamin</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="Laki-Laki"> <label>Laki-Laki</label>
+                        <input type="radio" name="gender" id="perempuan"> <label>Perempuan</label>
+                    </td>
+                </tr>
+                <!-- program keahlian -->
+                <tr>
+                    <td>
+                        <label for="skill">Program keahlian</label>
+                    </td>
+                    <td>
+                        <select name="skill" id="skill">
+                            <option>RPL</option>
+                            <option>MM</option>
+                            <option>PFTV</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- submit button -->
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="SUBMIT">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </body>
+</html>
