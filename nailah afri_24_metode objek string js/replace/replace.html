@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>Ganti "Jelek" dengan "Cakep Bangetttt" di paragraf di bawah ini:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo">Felix Jelek!</p>
+
+<script>
+function myFunction() {
+  var str = document.getElementById("demo").innerHTML; 
+  var txt = str.replace("Jelek","Cakep Bangetttt");
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
