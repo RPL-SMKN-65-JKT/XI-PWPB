@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    
+<form>
+    username:<br>
+    <input type="text" name="username">
+    <br>
+    Email Id:<br>
+    <input type="text" name="email_id">
+    <br><br>
+    <input type="submit" value="submit">
+</form>
+
+<form>
+    <label form="EMAIL ID">Email Id</label><br>
+    <input type="text" name="Email Id" id="Email Id">
+</form>
+
+<!--Example OF Password Field-->
+<h1>Example Of Password Field</h1>
+    <form>
+        <label for="user-password">Password:</label><br>
+        <input type="password" name="user-pwd" 
+                            id="user-password">
+    </form>
+
+<!--Example OF Radio Buttons-->
+<h1>Example Of Radio Buttons</h1>
+<form>
+    SELECT GENDER
+    <br>
+    <input type="radio" name="gender" id="male">
+    <label for="male">Male</label>
+    <br>
+    <input type="radio" name="gender" id="female">
+    <label for="female">Female</label>
+</form>
+
+<!--Example OF Html Checkboxes-->
+<h3>Example of HTML Checkboxes</h3>
+        <form>
+            <b>SELECT SUBJECTS</b>
+            <br>
+            <input type="checkbox" class="radio" name="subject" id="Dasar Pemrograman">
+            <label type="Dasar Pemrograman">Dasar Pemrograman</label>
+            <input type="checkbox" name="subject" id="science">
+            <label for="Pemrograman Web">Pemrograman Web</label>
+            <input type="checkbox" name="subject" id="Basis Data">
+            <label for="Basis Data">Basis Data</label>
+        </form>
+
+<!--Choose Subject-->
+<div>
+    <h1>Choose Subject</h1>
+    <form>
+        <br>
+        <label>
+            <input type="checkbox" class="radio" value="1" name="subject"/>Dasar Pemrograman
+        </label>
+        <label>
+            <input type="checkbox" class="radio" value="1" name="subject"/>Pemrograman Web
+        </label>
+        <label>
+            <input type="checkbox" class="radio" value="1" name="subject"/>Basis Data
+        </label>
+    </form>
+</div>
+
+<h5>Example of a file Select Box</h5>
+        <form>
+            <label for="fileselect">Upload</label>
+            <input type="file" name="upload" id="fileselect">
+        </form>
+
+    <h6>Example of a Text Area Box</h6>
+        <form>
+            <label for="Description">Description:</label>
+            <textarea rows="5" cols="50" name="Description"
+                                id="Description"></textarea>
+        </form>
+
+    <p>Example of a Box</p>
+        <form>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="India">India</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Australia">Australia</option>
+            </select>
+        </form>
+
+
+</body>
+</html>
