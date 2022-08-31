@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objek String Pada Javascript</title>
+</head>
+<body>
+    <center>
+        <h1>Nama : Fathul Bari</h1>
+        <h1>Kelas : XI RPL</h1>
+        <div class="garis" style="border: 1px solid black;"></span>
+    </center>
+    <h1>Method dalam objek string pada Javascript</h1>
+    <ul>
+        <li>
+            <input type="button" value="string.charAt()" onclick="contoh1()">
+             <!--Membuat Button yang jika di tekan akan menjalankan JavaScript function contoh1()  -->
+        </li>
+        <br>
+        <li>
+            <input type="button" value="string.charCodeAt()" onclick="contoh2()">
+            <!--Membuat Button yang jika di tekan akan menjalankan JavaScript function contoh2()  -->
+        </li>
+        <br>
+        <li>
+            <input type="button" value="string.concat()" onclick="contoh3()">
+            <!--Membuat Button yang jika di tekan akan menjalankan JavaScript function contoh3()  -->
+        </li>
+        <br>
+        <li>
+            <input type="button" value="string.indexOf()" onclick="contoh4()">
+            <!--Membuat Button yang jika di tekan akan menjalankan JavaScript function contoh4()  -->
+        </li>
+        <br>
+        <li>
+            <input type="button" value="string.replace()" onclick="contoh5()">
+            <!--Membuat Button yang jika di tekan akan menjalankan JavaScript function contoh5()  -->
+        </li>
+    </ul>
+    <div id="kotak"> <!--Membuat Kotak sebagai tempat function jika ditekan-->
+        <h2 id="jscript"></h2>  
+        <p id="baris1"></p>
+        <p id="baris2"></p>
+        <p id="baris3"></p>
+        <p id="baris4"></p>
+        <br>
+        <p id="baris5"></p>
+        <p id="baris6"></p>
+        <p id="baris7"></p>
+    </div>
+    <br>
+    <input type="reset" value="RESET" onclick="rst()">
+    <!--Membuat Button yang jika di tekan akan menjalankan JavaScript function rst()  -->
+</body>
+<script>
+
+
+    function contoh1() {
+
+        var nama = "FathulBari"
+        // Menjadikan nama sebagai variabel
+
+        document.getElementById("kotak").style.width = "500px"
+        // Memberikan style element yang memiliki id "kotak" yaitu sebuah width (panjang) 
+        document.getElementById("kotak").style.border = "1px solid black"
+        // Memberikan style element yang memiliki id "kotak" yaitu sebuah border dengan ketebalan 1px bentuk solid dan warna hitam
+        document.getElementById("jscript").innerHTML = "Method string.charAt()"
+        // Memberikan isi kepada element yang memiliki id "jscript"
+        document.getElementById("baris1").innerHTML = "Contoh:"
+        // Memberikan isi kepada element yang memiliki id "baris1"
+        document.getElementById("baris2").innerHTML = "var nama = \"FathulBari\""
+        // Memberikan isi kepada element yang memiliki id "baris2"
+        document.getElementById("baris3").innerHTML = "document.writeln (tes.charAt(0));"
+        // Memberikan isi kepada element yang memiliki id "baris3"
+        document.getElementById("baris4").innerHTML = "document.writeln (tes.charAt(6));"
+        // Memberikan isi kepada element yang memiliki id "baris4"
+        document.getElementById("baris5").innerHTML = "<b>Output:</b>"
+        // Memberikan isi kepada element yang memiliki id "baris5"
+        document.getElementById("baris6").innerHTML = (nama.charAt(0));
+        // Memberikan isi kepada element yang memiliki id "baris6"
+        document.getElementById("baris7").innerHTML = (nama.charAt(6));
+        // Memberikan isi kepada element yang memiliki id "baris7"
+    }
+
+    function contoh2() {
+
+        var nama = "FathulBari"
+        document.getElementById("kotak").style.width = "500px"
+        // Memberikan style element yang memiliki id "kotak" yaitu sebuah width (panjang)
+        document.getElementById("kotak").style.border = "1px solid black"
+        // Memberikan style element yang memiliki id "kotak" yaitu sebuah border dengan ketebalan 1px bentuk solid dan warna hitam
+        document.getElementById("jscript").innerHTML = "Method string.charCodeAt()"
+        // Memberikan isi kepada element yang memiliki id "jscript"
+        document.getElementById("baris1").innerHTML = "Contoh:"
+        // Memberikan isi kepada element yang memiliki id "baris1"
+        document.getElementById("baris2").innerHTML = "var nama = \"FathulBari\""
+         // Memberikan isi kepada element yang memiliki id "baris2"
+        document.getElementById("baris3").innerHTML = "document.writeln (tes.charCodeAt(0));"
+        // Memberikan isi kepada element yang memiliki id "baris3"
+        document.getElementById("baris4").innerHTML = "document.writeln (tes.charCodeAt(6));"
+        // Memberikan isi kepada element yang memiliki id "baris4"
+        document.getElementById("baris5").innerHTML = "<b>Output:</b>"
+        // Memberikan isi kepada element yang memiliki id "baris5"
+        document.getElementById("baris6").innerHTML = (nama.charCodeAt(0));
+        // Memberikan isi kepada element yang memiliki id "baris6"
+        document.getElementById("baris7").innerHTML = (nama.charCodeAt(6));
+        // Memberikan isi kepada element yang memiliki id "baris7"
+    }
+
+    function contoh3() {
+
+        var nama = "FathulBari"
+        document.getElementById("kotak").style.width = "500px"
+        document.getElementById("kotak").style.border = "1px solid black"
+        document.getElementById("jscript").innerHTML = "Method string.concat()"
+        document.getElementById("baris1").innerHTML = "Contoh:"
+        document.getElementById("baris2").innerHTML = "var nama = \"FathulBari\""
+        document.getElementById("baris3").innerHTML = "document.writeln (tes.concat(\" Keren\");"
+        document.getElementById("baris4").innerHTML = "document.writeln (tes.concat(\" Alim\");"
+        document.getElementById("baris5").innerHTML = "<b>Output:</b>"
+        document.getElementById("baris6").innerHTML = (nama.concat(" Keren<br>"));
+        document.getElementById("baris7").innerHTML = (nama.concat(" Alim"));
+        // Samain kyk yg diatas
+    }
+
+    function contoh4(){
+
+        var teks = "Saya sedang belajar JavaScript dengan Helmi"
+        document.getElementById("kotak").style.width = "500px"
+        document.getElementById("kotak").style.border = "1px solid black"
+        document.getElementById("jscript").innerHTML = "Method string.indexOf()"
+        document.getElementById("baris1").innerHTML = "Contoh:"
+        document.getElementById("baris2").innerHTML = "var teks = \"Saya sedang belajar JavaScript dengan Helmi\""
+        document.getElementById("baris3").innerHTML = "document.writeln (teks.indexOf(\"sedang\");"
+        document.getElementById("baris4").innerHTML = "document.writeln (teks.indexOf(\"html\");"
+        document.getElementById("baris5").innerHTML = "<b>Output:</b>"
+        document.getElementById("baris6").innerHTML = (teks.indexOf("sedang"));
+        document.getElementById("baris7").innerHTML = (teks.indexOf("html"));
+        // Samain kyk yg diatas
+    }
+
+    function contoh5() {
+
+        var teks = "Saya sedang belajar JavaScript dengan Helmi"
+        document.getElementById("kotak").style.width = "500px"
+        document.getElementById("kotak").style.border = "1px solid black"
+        document.getElementById("jscript").innerHTML = "Method string.replace()"
+        document.getElementById("baris1").innerHTML = "Contoh:"
+        document.getElementById("baris2").innerHTML = "var teks = \"Saya sedang belajar JavaScript dengan Helmi\""
+        document.getElementById("baris3").innerHTML = "document.writeln (teks.replace(/Helmi/g, \"Kevin\");"
+        document.getElementById("baris4").innerHTML = "document.writeln (teks.replace(/JavaScript/g, \"HTML\");"
+        document.getElementById("baris5").innerHTML = "<b>Output:</b>"
+        document.getElementById("baris6").innerHTML = (teks.replace(/Helmi/g, "Kevin"));
+        document.getElementById("baris7").innerHTML = (teks.replace(/JavaScript/g, "HTML"));
+        // Samain kyk yg diatas
+    }
+
+    function rst() {
+        document.getElementById("kotak").style.width = "0"
+        document.getElementById("kotak").style.border = "0"
+        document.getElementById("jscript").innerHTML = ""
+        document.getElementById("baris1").innerHTML = ""
+        document.getElementById("baris2").innerHTML = ""
+        document.getElementById("baris3").innerHTML = ""
+        document.getElementById("baris4").innerHTML = ""
+        document.getElementById("baris5").innerHTML = ""
+        document.getElementById("baris6").innerHTML = ""
+        document.getElementById("baris7").innerHTML = ""
+        // Menghilangkan isi-isi di element yang memiliki id diatas
+    }
+
+
+</script>
+</html>
