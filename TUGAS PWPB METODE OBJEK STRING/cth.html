@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tugas PWPB Arif Ibrahim</title>
+</head>
+<body>
+    <h1>Method dalam objek string pada Javascript</h1>
+        <ul>
+            <li><input type="button" value="string.charAt()" onclick="contoh1()"></li><br>
+            <li><input type="button" value="string.charCodeAt()" onclick="contoh2()"></li><br>
+            <li><input type="button" value="string.concat()" onclick="contoh3()"></li><br>
+            <li><input type="button" value="string.indexOf()" onclick="contoh4()"></li><br>
+            <li><input type="button" value="string.replace()" onclick="contoh5()"></li><br>
+        </ul>
+    </body>
+    <script>
+
+        var rst = document.createElement("<input type='reset' value='Back'>");
+
+        function contoh1() {
+
+            var tes = "MuhammadArifIbrahim"
+            document.writeln ("Method string.charAt()");
+            document.writeln ("<br><br>Contoh:");
+            document.writeln ("<br>var tes = \"MuhammadArifIbrahim\"");
+            document.writeln ("<br>document.writeln (tes.charAt(0));");
+            document.writeln ("<br>document.writeln (tes.charAt(8));")
+            document.writeln ("<br><br>Output : <br>");
+            document.writeln (tes.charAt(0));
+            document.writeln (tes.charAt(8));
+            document.writeln ("<br>");
+            
+        }
+
+        function contoh2() {
+
+            var tes = "MuhammadArifIbrahim"
+            document.writeln ("Method string.charCodeAt()");
+            document.writeln ("<br><br>Contoh:");
+            document.writeln ("<br>var tes = \"MuhammadArifIbrahim\"");
+            document.writeln ("<br>document.writeln (tes.charCodeAt(0));");
+            document.writeln ("<br>document.writeln (tes.charCodeAt(8));")
+            document.writeln ("<br><br>Output : <br>");
+            document.writeln (tes.charCodeAt(0));
+            document.writeln (tes.charCodeAt(8));
+        }
+
+        function contoh3() {
+
+            var tes = "MuhammadArifIbrahim"
+            document.writeln ("Method string.concat()");
+            document.writeln ("<br><br>Contoh:");
+            document.writeln ("<br>var tes = \MuhammadArifIbrahim\"");
+            document.writeln ("<br>document.writeln (tes.concat(\" Ganteng\"));");
+            document.writeln ("<br>document.writeln (tes.concat(\" Percaya Diri\"));");
+            document.writeln ("<br><br>Output : <br>");
+            document.writeln (tes.concat(" Ganteng<br>"));
+            document.writeln (tes.concat(" Percaya Diri"));
+        }
+
+        function contoh4(){
+
+            var tes = "Saya sedang belajar JavaScript dengan Helmi"
+            document.writeln ("Method string.indexOf()");
+            document.writeln ("<br><br>Contoh:");
+            document.writeln ("<br>var tes = \"Saya sedang belajar JavaScript dengan Helmi\"");
+            // untuk menjadikan tes sebagai variabel
+            document.writeln ("<br>//untuk menjadikan tes sebagai variabel");
+            document.writeln ("<br>document.writeln (tes.indexOf(\"Saya\"));");
+            document.writeln ("<br>document.writeln (tes.indexOf(\"PHP\"));");
+            document.writeln ("<br><br>Output : <br>");
+            document.writeln (tes.indexOf("Saya"));
+            document.writeln ("<br>")
+            document.writeln (tes.indexOf("PHP"));
+        }
+
+        function contoh5() {
+
+            var tes = "Saya sedang belajar JavaScript dengan Arva"
+            document.writeln ("Method string.replace()");
+            document.writeln ("<br><br>Contoh:");
+            document.writeln ("<br>var tes = \"Saya sedang belajar JavaScript dengan Helmi\"");
+            document.writeln ("<br>document.writeln (tes.replace(/Arva/g, \"Alan\"));");
+            document.writeln ("<br>document.writeln (tes.replace(/JavaScript/g, \"PHP\"));");
+            document.writeln ("<br><br>Output : <br>");
+            document.writeln (tes.replace(/Arva/g, "Alan"));
+            document.writeln ("<br>")
+            document.writeln (tes.replace(/JavaScript/g, "PHP"));
+        }
+
+
+    </script>
+    
+</body>
+</html>
