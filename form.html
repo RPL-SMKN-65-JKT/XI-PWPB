@@ -1,69 +1,95 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Tugas FORM</title>
-    </head>
-    <body>
-        <form>
-            <!-- tabel untuk buat tabel -->
-            <table border="0" cellpadding="5" cellsapcing="0">
-                <!-- tabel untuk niwn -->
-                <tr>  
-                    <td>
-                        <label for="ID">NISN:</label>
-                    </td>
-                    <td>
-                        <input type="number" name="ID">
-                    </td>   
-                </tr>
-                <!-- tabel untuk username -->
-                <tr>
-                    <td>
-                        <label for="username">MASUKAN NAMA:</label>
-                    </td>
-                    <td>
-                        <input type="text" name="username">
-                    </td>
-                </tr>
-                <!-- tabel untuk alamat -->
-                <tr>
-                    <td>
-                        <label for="alamat">ALAMAT:</label>
-                    </td>
-                    <td>
-                        <input type="text" name="alamat">
-                    </td>
-                </tr>
-                <!-- gender -->
-                <tr>
-                    <td>
-                        <label for="gender">Jenis kelamin</label>
-                    </td>
-                    <td>
-                        <input type="radio" name="gender" id="Laki-Laki"> <label>Laki-Laki</label>
-                        <input type="radio" name="gender" id="perempuan"> <label>Perempuan</label>
-                    </td>
-                </tr>
-                <!-- program keahlian -->
-                <tr>
-                    <td>
-                        <label for="skill">Program keahlian</label>
-                    </td>
-                    <td>
-                        <select name="skill" id="skill">
-                            <option>RPL</option>
-                            <option>MM</option>
-                            <option>PFTV</option>
-                        </select>
-                    </td>
-                </tr>
-                <!-- submit button -->
-                <tr>
-                    <td colspan="2">
-                        <input type="button" value="SUBMIT">
-                    </td>
-                </tr>
-            </table>
+<body>
+    
+<form>
+  Username:<br>
+  <input type="text"  name="username">
+  <br>
+  Email.id:<br>
+  <input type="text"  name="email_id">
+  <br><br>
+  <input type="submit"  value="submit">
+ </form> 
 
-        </form>
+ <form>
+    <label for="EMAIL ID">Emil.id:</label><br>
+    <input type="text" name="Email id" id="Email.id">
+</form>
+
+<h1>Example of Password Field</h1>
+     <form>
+           <label for="user-password">Passowrd:
+           <label><br>
+           <input type="passowrd" name="user-password">Password 
+     </form>
+  
+<h2>Example of Radio Buttons</h2> 
+     <form>
+          SELECT GENDER
+          <br>
+          <input type="radio" nama="gender" id="male">
+          <label fore="male">Male</label><br>
+          <input type="radio" nama="gender" id="female">
+          <label for="female">Female</label>
+      </form>
+<h3>Example of HTML Checkboxes</h3>
+     <form>
+          <b>SELECT SUBJECTS</b>
+          <input type="checkbox" name="subject" id="Dasar Pemrograman">
+          <label for="Dasar Pemrograman Web">Dasar Pemrograman Web</label>
+          <input type="checkbox" name="subject" id="subject">
+          <label for="Pemrograman Web">Pemrograman Web</label>
+          <input type="checkbox" name="subject" id="Basis Data">
+          <label for="Basis Data">Basis Data</label>
+      <form>
+
+    <div>
+
+<h4>Choose Subject</h4>
+      <form>
+            <br>
+            <label>
+                <input type="checkbox"  class="radio" value="1" name="subject"/>Dasar Pemrograman
+            </label> 
+            <label>
+                <input type="checkbox"  class="radio" value="1" nama="subject"/>Pemrograman Web
+             </label>
+             <label>
+                <input type="checkbox"  class="radio" value="1" name="subject"/>Basis data 
+             </label>
+         </form>
+    </div>
+           
+<h5>Example of a file Select Box</h5> 
+      <form>
+        <label for="fileselect">Upload:</label>
+        <input type="file" name="upload" id="fileselect">
+      </form>
+     
+<h6>Example of a Text Area Box</h6>
+      <form>
+        <label for="Description">Description</label>
+        <textarea rows="5" cols="50" name="Description" id="Description"></textarea>
+      </form> 
+
+<p>Example of a Select Box</p>
+      <form>
+        <label for="country">country</label>
+        <select name="country" id="country"></select>
+              <option value="India">India</option>
+              <option value="Sri Lanka">Sri Lanka</option>
+              <option value="Australia">Australia</option>
+        </select>
+      </form>
     </body>
-</html>
+</html>               
+      
+    
+    
+
+
+    
+    
+          
+     
