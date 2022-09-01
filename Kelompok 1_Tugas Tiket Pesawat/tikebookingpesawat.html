@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRAVELOKE</title>
+  <link rel="stylesheet" href="tiketbookingpesawat.css" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light ">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#">TRAVELOKE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/pesan.html">Home</a>
+          </li>
+          <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="/maskapai.html">Maskapai</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <form>
+      <div class="row">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" autofocus autocomplete="off" />
+        <label for="destinasi">Destinasi:</label>
+        <!-- <input type="text" id="destinasi" list="pilihanDestinasi" autocomplete="off" />
+        <datalist id="pilihanDestinasi"> -->
+
+        <select name="pilihanDestinasi" id="pilihanDestinasi">
+          <option value="Yogyakarta">Yogyakarta</option>
+          <option value="Batam">Batam</option>
+          <option value="Surabaya">Surabaya</option>
+          <option value="Bali">Bali</option>
+          <option value="Padang">Padang</option>
+        </select>
+        <!-- </datalist> -->
+        <label for="pilihanpesawat">Pilihan Pesawat:</label>
+        <!-- <input type="text" id="pilihanpesawat" list="pilihanPesawat" autocomplate="off" /> -->
+        <!-- <datalist id="pilihanPesawat"> -->
+          <select name="pilihanpesawat" id="pilihanpesawat">
+          <option value="CITILINK">CITILINK</option>
+          <option value="GARUDA INDONESIA">GARUDA INDONESIA</option>
+          <option value="LION AIR">LION AIR</option>
+          <option value="BATIK AIR">BATIK AIR</option>
+          <option value="SUPER AIR JET">SUPER AIR JET</option>
+          <option value="SRIWIJAYA AIR">SRIWIJAYA AIR</option>
+          <option value="WINGS AIR">WINGS AIR</option>
+          </select>
+        <!-- </datalist> -->
+        <!-- <input type="text" id="status" list="pilihanStatus" autocomplete="off" />
+            <datalist id="pilihanStatus">
+              <option value="Dewasa">Dewasa</option>
+              <option value="Anak-anak">Anak-anak</option>
+            </datalist> -->
+        <!-- <div class="row"> -->
+          <div class="col-6 m-0 p-1 ">
+            <label for="status">Jumlah Tiket Anak:</label>
+
+            <input type="number" id="tiket_anak" min="0" value="0">
+          </div>
+          <div class="col-6 m-0 p-1">
+            <label for="status">Jumlah Tiket Dewasa:</label>
+            <input type="number" id="tiket_dewasa" min="0" value="0">
+          </div>
+
+
+        <!-- </div> -->
+        <!-- <label for="jumlah">Jumlah Tiket:</label>
+          <input type="number" id="jumlah" /> -->
+        <label for="subtotal">Subtotal:</label>
+        <input type="number" id="subtotal" disabled />
+        <label for="diskon">Diskon:</label>
+        <input type="number" id="diskon" disabled />
+        <label for="total">Total:</label>
+        <input type="number" id="total" disabled />
+
+        <div class="tombol">
+          <input type="submit" value="Pesan" id="pesan" />
+          <input type="button" value="Hapus" id="hapus" />
+        </div>
+      </div>
+    </form>
+
+    <!-- Jika berhasil pesan akan menampilkan berkas output nya -->
+    <div class="output">
+      <h2>TICKET PAYMENT</h2>
+      <p>Nama: <span id="namaOutput"></span></p>
+      <p>Destinasi: <span id="destinasiOutput"></span></p>
+      <p>Pilihan Pesawat: <span id="PilihanPesawatOutput"></span></p>
+      <p>Status: <span id="statusOutput"></span></p>
+      <p>Jumlah Tiket: <span id="jumlahOutput"></span></p>
+      <p>Subtotal: <span id="subtotalOutput"></span></p>
+      <p>Diskon: <span id="diskonOutput"></span></p>
+      <p>Total: <span id="totalOutput"></span></p>
+      <p style="  color: rgb(32, 204, 55);
+      font-weight: bold;
+      margin-top: 30px;"><sup>*</sup>Harga 1 tiket dewasa: <span id="hargaTiketDewasa"></span></p>
+      <p><sup>*</sup>Harga 1 tiket anak: <span id="hargaTiketAnak"></span></p>
+    </div>
+  </div>
+
+  <div class="informasi">
+    <span>Catatan:</span>
+    <span><sup></sup>Destinasi hanya terdapat 5 kota: Yogyakarta, Batam, Surabaya, Bali dan Padang<br>
+      <span><sup></sup>Status hanya terdapat 2: Dewasa dan Anak-anak<br>
+        <span><sup></sup>Jika membeli Jumlah Tiket lebih dari 5 bisa mendapat diskon 15%
+  </div>
+  <script src="tiketbooking.js"></script>
+  <footer style="text-align:center;">
+    <p>
+        @Kelompok Hangat
+    </p>
+</footer>
+</body>
+
+</html>
