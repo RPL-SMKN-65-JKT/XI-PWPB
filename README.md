@@ -1,4 +1,4 @@
-# Pemesanan_Tiket
+# List_lagu
 Buatlah sebuah website yang bertema pemesanan tiket dengan menggunakan HTML + CSS + JavaScript
 
 ## Reading Material
