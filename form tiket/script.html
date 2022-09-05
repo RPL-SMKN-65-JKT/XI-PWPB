@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<!--deklarasi tittle dokumen dan file yg berhubungan(css,js)-->
+<head>
+<!--judul yg di tampilkan pada windows browser-->
+ <title>INDEX</title>
+ <!--menunjukkan file yang di tunjuk yaitu file stylesheet atau css-->
+ <link rel="stylesheet" href="script.css">
+</head>
+<body>
+<!--membuat elemen pada halamaan web-->
+<form>
+<!--sebuah judul teks dalam sebuah halaman web-->
+ <h4>PEMESANAN TIKET BIOSKOP</h4>
+  <table>
+  <!--tr berfungsi untuk buat baris dari sbuah tabel-->
+  <tr>
+  <!--td untuk kolom-->
+   <td><label>NAMA STUDIO</label></td>
+   <td>: <input type="text" id="inp_nama studio"></td>
+  
+  </tr>
+  <tr>
+  <tr>
+    <td><label>JAM TAYANG</label></td>
+    <td>
+    <!--fungsi tag select yaitu membuat objek form yang berupa list pilihan-->
+     : <select onchange="JAMTAYANG()" id="inp_jam tayang">
+     <option value="13.00-15.00">13.00-15.00</option>
+     <option value="17.00-19.00">17.00-19.00</option>
+     <option value="21.00-23.00">21.00-23.00</option>
+     </select>
+    </td>
+   </tr>
+  <tr>
+   <td><label>JUDUL FILM</label></td>
+   <td>
+    : <select onchange="JUDULFILM()" id="inp_judul film">
+    <option value="IVANNA">IVANNA</option>
+    <option value="GOZILLA">GOZILLA</option>
+    <option value="PENGABDI SETAN 2">PENGABDI SETAN 2</option>
+    <option value="KELUARGA CEMARA">KELUARGA CEMARA</option>
+    <option value="MAKMUM 2">MAKMUM 2</option>
+    <option value="KKN DI DESA PENARI">KKN DI DESA PENARI</option>
+    <option value="SUSAH SINYAL">SUSAH SINYAL</option>
+    </select>
+   </td>
+  </tr>
+  <tr>
+   <td><label>KURSI</label></td>
+   <td>
+    <select onchange="KURSI()" id="inp_bangku">
+    <option id="title">--SEAT--</option>
+    <option value="A" id="A">A</option>
+    <option value="B" id="B">B</option>
+    <option value="C" id="C">C</option>
+    <option value="D" id="D">D</option>
+    <option value="E" id="E">E</option>
+    <option value="F" id="F">F</option>
+    <option value="G" id="G">G</option>
+    <option value="H" id="H">H</option>
+    
+    
+    </select>
+   </td>
+  </tr>
+  <tr>
+   <td><label>HARGA TIKET</label></td>
+   <td>: <input type="text" id="harga_tiket" min="0"></td>
+  <tr>
+   <td><label>JUMLAH</label></td>
+   <td>: <input onkeyup="Total(this.value)" type="number" id="inp_jumlah" name=""></td>
+  </tr>
+  <tr>
+   <td><label>TOTAL</label></td>
+   <td>: <input type="text" id="total2"></td>
+  </tr>
+  </table>
+  <center><input type="button" value="PESAN" onclick="pesan()" name=""></center>
+</form>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
