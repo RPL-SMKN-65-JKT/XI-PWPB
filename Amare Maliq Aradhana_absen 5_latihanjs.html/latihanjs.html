@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- buat judul <tittle -->
+    <title>TES</title>
+    <!--  <script> tag is  used to embed a client-side script -->
+    <!--  a function contain some code that will be executed by an event or a call that function -->
+    <!-- pembuat pesan di website alert-->
+    <!-- var element represents the name of a variable in amathematical expresision or a programing context -->
+    <!-- if else executes a block of code if a specied condition is true -->
+    <script>
+        function warning(pesan_kita) {
+            alert(pesan_kita);
+        }
+
+        function password(pesan_prompt, pesan_sukses, pesan_gagal) {
+            var password = prompt(pesan_prompt);
+            if (password != 'Amare') {
+                alert(pesan_gagal);
+            }else {
+                alert(pesan_sukses)
+            }
+        }
+    </script>
+</head>
+<body onload="warning('Dilarang Masuk Kecuali Petugas');">
+<!-- onload ='warning' itu untuk mengload 'function warning' yang sudah di buat di javascript diatas -->
+    <center>
+    <P><b>TEMPAT RAHASIA</b></P>
+    <p>Sekali lagi saya tegaskan jangan memasuki area ini selain petugas</p>
+    <div class="link">
+        <a href="javascript: password('masukan password:', 'kamu orang ganteng', 'Kamu jelek');">Masuk =></a>
+    </center>
+    <!-- href='javascript: password' untuk mengload 'function password' yang sudah di buat di javascript diatas -->
+    </body>
+<body>
+    
+</body>
+</html>
