@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/about.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <section>
+        <div class="container-navbar">
+        <div class="header">
+            <a href="/anggota" ><img src="source/hololg.png" class="logo" alt=""></a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/members">Members</a></li>
+                <li><a href="/event">Event</a></li>
+            </ul>
+        </div>
+    </div>
+</section> 
+<!-- form start  -->
+<form action="/signupprocess" method="post">
+    <div class="row">
+        <div class="input-field col s12 label-color-alternate">
+            <input id="name" type="text" class="validate" autocomplete="off" name="name" required>
+            <label for="name">Name</label>
+        </div>
+        <div class="input-field col s12 label-color-alternate">
+            <input id="password" type="password" class="validate" autocomplete="off" name="password" required>
+            <label for="password">Password</label>
+        </div>
+        <div class="input-field col s12 label-color-alternate">
+            <input id="confirm_password" type="password" class="validate" autocomplete="off" name="confirm_password" required>
+            <label for="confirm_password">Confirm password</label>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Buat Akun</button>
+        <section style="color: red;">{{.Confirmation}}</section>
+    </div>
+</form>
+
+<div class="signup">
+    Sudah punya akun?
+    <a class="waves-effect waves-light btn-small" href="/login">Login!</a>
+</div>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

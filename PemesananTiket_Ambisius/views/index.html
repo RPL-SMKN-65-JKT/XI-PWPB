@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styke.css">
+</head>
+<body>
+    
+    <section>
+    <div class="container-navbar">
+    <div class="header">
+        <a href="/anggota" ><img src="source/hololg.png" class="logo" alt=""></a>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/members">Members</a></li>
+            <li><a href="/event">Event</a></li>
+            {{if eq .Login "true"}}
+                <li><a href="/account">Account</a></li>
+            {{end}}
+        </ul>
+    </div>
+</div>
+   <div class="banner">
+    <video autoplay loop muted>
+        <source src="source/backvid.mp4" type="video/mp4">
+    </video>
+    <h3 id="#text">Hololive ID</h3>
+   </div>
+    <a href="/event" id="btn">Explore</a>
+</section>
+
+</body>
+</html>
