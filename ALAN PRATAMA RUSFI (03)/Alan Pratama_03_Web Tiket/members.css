@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: rgb(41, 38, 38);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+
+.header{
+    background: #7597de;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -4;
+    width: 101%;
+    padding: 25px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    width: 30%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.header ul li a:hover{
+    background-color: #fff;
+    color: #2b1055;
+}
+.member{
+    justify-content: space-between;
+}
+.gen1l{
+    background: linear-gradient(#AD8CEA, #50DFB2);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    margin-top: 100;
+    margin-left: 50px;
+    width: 30%;
+    height: 625px;
+    border: 2px solid black;
+    border-radius: 80px;
+}
+
+.gen1l:hover{
+    background: rgba(255, 255, 255, 0.715);
+    border: 10px solid black;
+    border-radius: 80px;
+}
+.gen1r:hover{
+    background: rgba(255, 255, 255, 0.715);
+    border: 10px solid black;
+    border-radius: 80px;
+}
+
+.gen1r{
+    background: linear-gradient(#AD8CEA, #50DFB2);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    height: 625px;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 80px;
+}
+/* gen 2 */
+.gen2l{
+    background: linear-gradient(#AD8CEA, #50DFB2);
+    margin-left: 50px;
+    width: 30%;
+    height: 625px;
+    border: 2px solid black;
+    border-radius: 80px;
+}
+
+.gen2l:hover{
+    background: #fff;
+    border: 10px solid black;
+    border-radius: 80px;
+}
+.gen2r:hover{
+    background: rgba(255, 255, 255, 0.715);
+    border: 10px solid black;
+    border-radius: 80px;
+}
+
+.gen2r{
+    background: linear-gradient(#AD8CEA, #50DFB2);
+    height: 625px;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 80px;
+}
+
+/* gen 2 end  */
+.reine{
+    background: linear-gradient(#AD8CEA, #50DFB2);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    width: 30%;
+    height: 625px;
+    border: 2px solid black;
+    border-radius: 80px;
+}
+
+.reine:hover{
+    background: rgba(255, 255, 255, 0.715);
+    border: 10px solid black;
+    border-radius: 80px;
+}
+
+.gen3l{
+    background: linear-gradient(#AD8CEA, #50DFB2);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    margin-left: 50px;
+    width: 30%;
+    height: 625px;
+    border: 2px solid black;
+    border-radius: 80px;
+}
+
+.gen3l:hover{
+    background: rgba(255, 255, 255, 0.715);
+    border: 10px solid black;
+    border-radius: 80px;
+}
+.gen3r:hover{
+    background: rgba(255, 255, 255, 0.715);
+    border: 10px solid black;
+    border-radius: 80px;
+}
+
+.gen3r{
+    background: linear-gradient(#AD8CEA, #50DFB2);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    height: 625px;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 80px;
+}
+
+.mor{
+    margin-top: -80;
+    margin-left: 570px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border: 4px solid #1c0522;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

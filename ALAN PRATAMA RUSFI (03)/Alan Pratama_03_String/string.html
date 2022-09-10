@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objek String Pada Javascript</title>
+    <style>
+        script {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Method dalam objek string pada Javascript</h1>
+    <ul>
+        <li><input type="button" value="string.charAt(nama_siswa)" onclick="charAt()"></li><br>
+        <li><input type="button" value="string.charCodeAt()" onclick="charCodeAt()"></li><br>
+        <li><input type="button" value="string.concat()" onclick="concat()"></li><br>
+    </ul>
+</body>
+<script>
+    function charAt() {
+
+        var nama = "Alan Pratama"
+
+        document.writeln ("Nama : Alan Pratama <br>")
+
+        /*  Output nya : nama.charAt(0)
+                         nama.charAt(4)
+            0 yaitu huruf pertama pada var tes dan 4 huruf ke 4 pada var nama
+        */
+        document.writeln ("Inisial : ");
+
+        /* charAt Output */
+        document.writeln (nama.charAt(0));
+        document.writeln (nama.charAt(5));
+
+    }
+
+    function charCodeAt() {
+
+        var nama = "Alan Pratama"
+
+        document.writeln ("Var nama : Alan Pratama <br>");
+
+        /*  Output nya : tes.charCodeAt(0)
+                         tes.charCodeAt(4)
+            Dapat angka 65 karena A=65 
+            Dapat angka 65 karena P=32 
+        */
+        document.writeln ("Output : ");
+
+        /*Output*/
+        document.writeln (nama.charCodeAt(0));
+        document.writeln (nama.charCodeAt(4));
+    }
+
+    function concat() {
+
+var nama = "Alan Pratama"
+
+document.writeln ("Var tes : Alan Pratama  <br><br>");
+
+/*  Output nya : tes.concat(Rusfi)
+                 tes.concat(091205)
+    Dapat Rusfi karna menggunakan concat
+    Dapat (091205) karna menggunakan concat
+*/
+document.writeln ("Output : <br>");
+
+/*Output*/
+document.writeln (nama.concat(" Rusfi <br> "));
+document.writeln (nama.concat(" (091205) <br> "));
+}
+</script>
+</html>
