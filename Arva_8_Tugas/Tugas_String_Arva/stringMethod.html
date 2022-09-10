@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methos String Javascript</title>
+</head>
+<body>
+    <h1>Tugas Form Arva - XI RPL</h1>
+    <h2>Javascript String Methods:</h2>
+    <label for="input"><b>let input = </b></label>
+    "<input type="text" id="input" value="Hello World" placeholder="Masukan Text" required>"; // ubah value
+    
+    <br><br>
+
+    <b>Methods:</b> <br><br>
+    <input type="button" onclick="Uppercase()" value="input.toUpperCase();">
+    <br><br>
+    <input type="button" onclick="Lowercase()" value="input.toLowerCase();">
+    <br><br>
+    <input type="button" onclick="Konkat()" value='input.concat(" ","HA!");'>
+    <br><br>
+
+    <textarea name="output" id="output" cols="150" rows="20"></textarea>
+
+    <script>
+        function Lowercase() {
+            let input = document.getElementById("input").value;
+            let output = document.getElementById("output");
+            let input_lowercase = input.toLowerCase();
+
+            output.value = `
+                // Code
+                let input = ${input};
+                let input_lowercase = input.toLowerCase(); // Semua huruf kapital menjadi huruf kecil
+                document.writeln(input_lowercase);
+
+                // Output
+                ${input_lowercase};
+            `;
+        }
+
+        function Uppercase() {
+            let input = document.getElementById("input").value;
+            let output = document.getElementById("output");
+            let input_uppercase = input.toUpperCase();
+
+            output.value = `
+                // Code
+                let input = ${input};
+                let input_uppercase = input.toUpperCase(); // Semua huruf kecil menjadi huruf kapital
+                document.writeln(input_uppercase);
+
+                // Output
+                ${input_uppercase};
+            `;
+        }
+
+        function Konkat() {
+            let input = document.getElementById("input").value;
+            let output = document.getElementById("output");
+            let input_concat = input.concat(" ", "HA!");
+
+            output.value = `
+                // Code
+                let input = ${input};
+                let input_concat = input.concat(" ","HA!"); // Menggabungkan input (${input}) dengan "HA!"
+                document.writeln(input_concat);
+
+                // Output
+                ${input_concat};
+            `;
+        }
+    </script>
+</body>
+</html>
