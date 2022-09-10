@@ -1,126 +1,124 @@
-<html>
-    <head>
-        <title>Metode String pada</title>
-        <style>
-            body {
-                font-family: 'Courier New', Courier, monospace;
-            }
-            ul {
-                font-size: larger
-            }
-        </style>
-    </head>
-    <body>
-        <h2>Macam Objek String Dalam JS</h2>
-        <ul>
-            <li> <input type="button" value="string.charAt()"       onclick="Contoh1()"> </li> <br>
-            <li> <input type="button" value="string.charCodeAt()"   onclick="Contoh2()"> </li> <br>
-            <li> <input type="button" value="string.concat()"       onclick="Contoh3()"> </li> <br>
-            <li> <input type="button" value="string.indexOf()"      onclick="Contoh4()"> </li> <br>
-            <li> <input type="button" value="string.replace()"      onclick="Contoh5()"> </li> <br>
-            <li> <input type="button" value="string.lastIndexOf()"  onclick="Contoh6()"> </li> <br>
-            <li> <input type="button" value="string.match()"        onclick="Contoh7()"> </li> <br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objek String Pada Javascript</title>
+    <style>
         
-        </ul>
-    </body>
-    <script>
+    </style>
+</head>
+<body>
+    <h1>Method dalam objek string pada Javascript</h1>
+    <ul>
+        <li><input type="button" value="string.charAt()" onclick="contoh1()"></li><br>
+        <li><input type="button" value="string.charCodeAt()" onclick="contoh2()"></li><br>
+        <li><input type="button" value="string.concat()" onclick="contoh3()"></li><br>
+        <li><input type="button" value="string.indexOf()" onclick="contoh4()"></li><br></li>
+        <li><input type="button" value="string.replace()" onclick="contoh5()"></li><br></li><br>
+    </ul>
+</body>
+<script>
+    function contoh1() {
 
-        function Contoh1() {
-            var tes = "REVIKHASHA"
-            // charAt digunakan untuk menampilkan character yang kita tulis 
-            document.writeln ("Method string.charAt()");
-            document.writeln ("<br><br>Contoh");
-            document.writeln ("<br>var nama= \"REVIKHASHA\"");
-            document.writeln ("<br>document.writeln (tes.charArt(0));");
-            document.writeln ("<br>document.writeln (tes.charArt(4));");
-            document.writeln ("<br><br>Outputnya = <br>");
-            document.writeln (tes.charAt(0));
-            document.writeln (tes.charAt(4));
-        }
+        var tes = "AmareMaliqAradhana"
+        document.writeln ("Method string.charAt()");
+        document.writeln ("<br><br>Contoh:");
+        document.writeln ("<br>var tes = AmareMaliqAradhana");
+        document.writeln ("<br>document.writeln (tes.charAt(0));");
+        document.writeln ("<br>document.writeln (tes.charAt(5));");
+        document.writeln ("<br>document.writeln (tes.charAt(10));");
+        /*  
+            0=A 5=M 10=A
+            OUTPUT TERSEBUT MENGHASILKAN : A M A
+        */
+        document.writeln ("<br><br>Output : <br>");
+        document.writeln (tes.charAt(0));
+        document.writeln (tes.charAt(5));
+        document.writeln (tes.charAt(10));
 
-        function Contoh2() {
-            var nama = "REVIKHASHA"
-            // charCodeAt digunakan untuk menampilkan unicode characters
-            document.writeln ("Method string.charCodeAt()");
-            document.writeln ("<br><br>Contoh");
-            document.writeln ("<br>var nama= \"REVIKHASHA\"");
-            document.writeln ("<br>document.writeln (nama.charCodeArt(0));");
-            document.writeln ("<br>document.writeln (nama.charCodeArt(4));");
-            document.writeln ("<br><br>Outputnya = <br>");
-            document.writeln (nama.charCodeAt(0));
-            document.writeln (nama.charCodeAt(4));
-        }
+    }
 
-        function Contoh3() {
-            var nama = "REVIKHASHA" 
-            // concat digunakan untuk menyambungkna string
-            document.writeln ("Method string.concat()");
-            document.writeln ("<br><br>Contoh");
-            document.writeln ("<br>var nama= \"REVIKHASHA\"");
-            document.writeln ("<br>document.writeln (nama.concat(\"RAJA\"));");
-            document.writeln ("<br>document.writeln (nama.concat(\"SATIR\"));");
-            document.writeln ("<br><br>Outputnya = <br>");
-            document.writeln (nama.concat(" RAJA"));
-            document.writeln ("<br>");
-            document.writeln (nama.concat(" SATIR"));
-        }
-      
-        function Contoh4() {
-            var nama = "Saya sedang belajar JavaScript diajari oleh banh bari " 
-            // indexOf digunakan untukk mencari kata yang kita tulis jika tidak ada maka akan menampilkan -1(mines 1)
-            document.writeln ("Method string.indexOf()");
-            document.writeln ("<br><br>Contoh");
-            document.writeln ("<br>var nama= \"Saya sedang belajar JavaScript diajari oleh banh bari\"");
-            document.writeln ("<br>document.writeln (nama.indexOf(\"sedang\"));");
-            document.writeln ("<br>document.writeln (nama.indexOf(\"JavaScript\"));");
-            document.writeln ("<br><br>Outputnya = <br>");
-            document.writeln (nama.indexOf(" sedang"));
-            document.writeln ("<br>");
-            document.writeln (nama.indexOf(" JavaScript"));
-        }
+    function contoh2() {
 
-        
-        function Contoh5() {
-            var nama = "Saya sedang belajar JavaScript diajari oleh banh bari " 
-            // replace digunakan untuk menukar kalimat 
-            document.writeln ("Method string.replace()");
-            document.writeln ("<br><br>Contoh");
-            document.writeln ("<br>var nama= \"Saya sedang belajar JavaScript diajari oleh banh bari\"");
-            document.writeln ("<br>document.writeln (nama.replace(/bari/g, \"helmi\"));");
-            document.writeln ("<br>document.writeln (nama.replace(/JavaScript/g, \"C++\"));");
-            document.writeln ("<br><br>Outputnya = <br>");
-            document.writeln (nama.replace(/bari/g, "helmi"));
-            document.writeln ("<br>");
-            document.writeln (nama.replace(/JavaScript/g, "C++"));
-        }
+        var tes = "AmareMaliqAradhana"
+        document.writeln ("Method string.charCodeAt()");
+        document.writeln ("<br><br>Contoh:");
+        document.writeln ("<br>var tes = AmareMaliqAradhana");
+        document.writeln ("<br>document.writeln (tes.charCodeAt(0));");
+        document.writeln ("<br>document.writeln (tes.charCodeAt(5));")
+        document.writeln ("<br>document.writeln (tes.charCodeAt(10));");
+        /*   
+            75=A 65=M 82=A
+            OUTPUT TERSEBUT MENGHASILKAN : 75 65 82
+        */
+        document.writeln ("<br><br>Output : <br>");
+        document.writeln (tes.charCodeAt(0));
+        document.writeln (tes.charCodeAt(5));
+        document.writeln (tes.charCodeAt(10));
+    }
 
-        
-        function Contoh6() {
-            var nama = "Saya sedang belajar JavaScript diajari oleh banh bari " 
-            // lastIndexOf digunakan untuk mencari kalimat jika kalimatnya tidak ada maka akan muncul -1(mines 1)
-            document.writeln ("Method string.lastI ndexOf()");
-            document.writeln ("<br><br>Contoh");
-            document.writeln ("<br>var nama= \"Saya sedang belajar JavaScript diajari oleh banh bari\"");
-            document.writeln ("<br>document.writeln (nama.lastIndexOf(\"Saya\"));");
-            document.writeln ("<br>document.writeln (nama.lastIndexOf(\"bari\"));");
-            document.writeln ("<br><br>Outputnya = <br>");
-            document.writeln (nama.lastIndexOf(" Saya"));
-            document.writeln ("<br>");
-            document.writeln (nama.lastIndexOf(" bari"));
-        }
+    function contoh3() {
 
-        function Contoh7() {
-            var nama = "Saya sedang belajar JavaScript diajari oleh banh bari "
-            // match digunakan untuk mencari kalimat jika kalimatnya tidak ada maka akan muncul "null"
-            document.writeln ("Method string.match()");
-            document.writeln ("<br><br>Contoh");
-            document.writeln ("<br>var nama= \"Saya sedang belajar JavaScript diajari oleh banh bari\"");
-            document.writeln ("<br>document.writeln (nama.match(\"Saya\"));");
-            document.writeln ("<br>document.writeln (nama.match(\"bari\"));");
-            document.writeln ("<br><br>Outputnya = <br>");
-            document.writeln (nama.match(" kamu"));
-            document.writeln ("<br>");
-            document.writeln (nama.match(" bari"));
-        }
-    </script>
+        var tes = "AmareMaliqAradhana"
+        document.writeln ("Method string.concat()");
+        document.writeln ("<br><br>Contoh:");
+        document.writeln ("<br>var tes = \"AmareMaliqAradhana\"");
+        document.writeln ("<br>document.writeln (tes.concat(\" Keren\"));");
+        document.writeln ("<br>document.writeln (tes.concat(\" Baik\"));");
+        /*   
+            Dapat Keren karna menggunakan concat
+            Dapat Baik karna menggunakan concat
+            OUTPUT TERSEBUT MENGHASILKAN :  AmareMaliqAradhana Keren
+                                            AmareMaliqAradhana Baik
+        */
+        document.writeln ("<br><br>Output : <br>");
+        document.writeln (tes.concat(" Keren<br>"));
+        document.writeln (tes.concat(" Baik"));
+
+    }
+
+    function contoh4() {
+
+        var tes = "Saya sedang belajar javaScript dengan zikry"
+        document.writeln ("Method string.indexOf()");
+        document.writeln ("<br><br>Contoh:");
+        document.writeln ("<br>var tes = \"Saya sedang belajar javaScript dengan zikry\"");
+        document.writeln ("<br>document.writeln (tes.indexOf(\"sedang\"));");
+        document.writeln ("<br>document.writeln (tes.indexOf(\"php\"));");
+        /*   
+            Dapat 4 karna sedang=4
+            Dapat -1 karna kalimat atau kata tersebut tidak ada
+            OUTPUT TERSEBUT MENGHASILKAN :  4
+                                            -1
+        */
+        document.writeln ("<br><br>Output : <br>");
+        document.writeln (tes.indexOf(" sedang"));
+        document.writeln ("<br>");
+        document.writeln (tes.indexOf(" php"));
+
+    }
+
+    function contoh5() {
+
+        var tes = "Saya sedang belajar javaScript dengan zikry"
+        document.writeln ("Method string.replace()");
+        document.writeln ("<br><br>Contoh:");
+        document.writeln ("<br>var tes = \"Saya sedang belajar javaScript dengan zikry\"");
+        document.writeln ("<br>document.writeln (tes.replace(/zikry/g, \"Amare\"));");
+        document.writeln ("<br>document.writeln (tes.replace(/JavaScript/g, \"php\"));");
+        /*   
+            Zikry diganti dengan Amare karena menggunakan replace
+            Output yang kedua tidak menggunakan replace
+            OUTPUT TERSEBUT MENGHASILKAN :  Saya sedang belajar javaScript dengan amare
+                                            Saya sedang belajar javaScript dengan zikry
+        */
+        document.writeln ("<br><br>Output : <br>");
+        document.writeln (tes.replace(/zikry/g, "Amare"));
+        document.writeln ("<br>");
+        document.writeln (tes.replace(/JavaScript/g, "php"));
+
+    }
+</script>
 </html>
