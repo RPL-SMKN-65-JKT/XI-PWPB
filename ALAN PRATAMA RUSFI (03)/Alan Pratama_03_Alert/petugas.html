@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>LATIHAN WARNING</title>
+    <script language="javascript">
+        function warning(pesan_kita){
+            alert(pesan_kita);
+        }
+
+        function password(pesan_prompt, pesan_sukses, pesan_gagal){
+            var password = prompt(pesan_prompt);
+            if(password != 'petugas'){
+                alert(pesan_sukses);
+            }
+            else{
+                alert(pesan_gagal);
+            }
+        }
+    </script>
+</head>
+
+
+<body onload="warning('MASUK KE HALAMAN PETUGAS')">
+    <a href="javascript: warning('Masuk PETUGAS'), password('Masukkan Password', 'GAGAL!', 'BERHASIL!')" style="text-decoration: none; font-size: 20px; font-weight: 600; color: black; border: 2px solid black; border-radius: 20px; background-color: crimson; padding: 4px;">LOGIN DISINI</a>
+
+</body>
+</html>
