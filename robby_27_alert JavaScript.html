@@ -1,0 +1,29 @@
+<html> 
+ <head> <!--membuat judul--> 
+ </head>
+ <body onload="warning('Dilarang masuk selain petugas');">
+  <tittle>
+   PARAMETER DALAM FUNGSI
+  </tittle> <!--untuk memasuki javascript ke dalam html--> 
+  <script languange="javascript">
+function warning(pesan_kita)
+{
+alert(pesan_kita)
+}
+function password(pesan_prompt,pesan_sukses,pesan_gagal)
+{
+var passwd = prompt(pesan_prompt);
+if (passwd != 'petugas')
+{
+alert(pesan_gagal);
+}
+else
+{
+alert(pesan_sukses);
+}
+}
+</script> 
+  <p><b>TEMPAT RAHASIA</b></p> 
+  <p>Sekali lagi saya tegaskan jangan memasuki area ini selain petugas. BERBAHAYA!!!!!!</p> <a href="javascript: password('masukkan password:' , 'password benar', 'pasword salah');">masuk</a> 
+ 
+</body></html>
