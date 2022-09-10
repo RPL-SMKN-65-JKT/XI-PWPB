@@ -1,0 +1,131 @@
+<html> 
+ <head> 
+  <title>pemesanan tiket bus</title> 
+ </head> 
+ <body> 
+  <script type="text/javascript">
+    function hitungtotal(){
+
+      var nama = (document.form.inama.value);
+      var tujuan = (document.form.itujuan.value);
+      var jumlahpaket = parseFloat (document.form.ijumlah.value);
+      var ht = 0.0 ;
+      var sub = 0.0;
+      var diskon = 0.0;
+      var total = 0.0;
+      if (tujuan == "Jakarta") {
+
+        ht = 10000;
+      }
+      else if(tujuan == "Bandung")
+      {
+        ht = 5000;
+      }
+      else
+      {
+        ht = 20000;
+      }
+
+      sub = jumlahpaket*ht;
+
+      if (document.form.imamber.checked == true) 
+      {
+        diskon = 0.10 * sub;
+      }
+      else
+      {
+        diskon=0.0;
+      }
+      total = sub - diskon;
+      document.form.otiket.value=eval(ht);
+      document.form.osub.value=eval(sub);
+      document.form.odiskon.value=eval(diskon);
+      document.form.ototal.value=eval(total);
+    }
+
+  </script> 
+  <form name="form" onchange="hitungtotal()"> 
+   <table> 
+    <tbody> 
+     <tr> 
+      <td> <h2>Pemesanan Tiket Bus</h2> </td> 
+     </tr> 
+     <tr> 
+      <td>Nama</td> 
+      <td><input type="text" name="inama" size="25" placeholder="Nama Anda.."> </td> 
+     </tr> 
+     <tr> 
+      <td> Tujuan </td> 
+      <td> <select name="itujuan"> <option value="Jakarta">Jakarta</option> <option value="Bandung">Bandung</option> <option value="Bogor">Bogor</option> </select> </td> 
+     </tr> 
+     <tr> 
+      <td> Jumlah Tiket </td> 
+      <td> <input type="text" size="15" name="ijumlah" placeholder="Jumlah Tiket Anda.."> </td> 
+     </tr> 
+     <tr> 
+      <td> Member </td> 
+      <td> <input type="checkbox" name="imamber">Ya </td> 
+     </tr> 
+     <tr> 
+      <td> Harga Tiket </td> 
+      <td> <input type="text" size="10" name="otiket"> </td> 
+     </tr> 
+     <tr> 
+      <td> Sub Total </td> 
+      <td> <input type="text" size="10" name="osub"> </td> 
+     </tr> 
+     <tr> 
+      <td> Diskon </td> 
+      <td> <input type="text" size="10" name="odiskon"> </td> 
+     </tr> 
+     <tr> 
+      <td> Total Bayar </td> 
+      <td> <input type="text" name="ototal" size="10&quot;&quot;"> </td> 
+     </tr> 
+     <tr> 
+      <td></td> 
+      <td> <input type="button" value="Hitung" onclick="hitungtotal()"> <input type="reset" value="Ulangi"> </td> 
+     </tr> 
+    </tbody> 
+   </table> 
+  </form> 
+ 
+<script type="text/javascript" id="dcoder_script"> <script type="text/javascript">
+    function hitungtotal(){
+
+      var nama = (document.form.inama.value);
+      var tujuan = (document.form.itujuan.value);
+      var jumlahpaket = parseFloat (document.form.ijumlah.value);
+      var ht = 0.0 ;
+      var sub = 0.0;
+      var diskon = 0.0;
+      var total = 0.0;
+      if (tujuan == "Jakarta") {
+
+        ht = 10000;
+      }
+      else if(tujuan == "Bandung")
+      {
+        ht = 5000;
+      }
+      else
+      {
+        ht = 20000;
+      }
+
+      sub = jumlahpaket*ht;
+
+      if (document.form.imamber.checked == true) 
+      {
+        diskon = 0.10 * sub;
+      }
+      else
+      {
+        diskon=0.0;
+      }
+      total = sub - diskon;
+      document.form.otiket.value=eval(ht);
+      document.form.osub.value=eval(sub);
+      document.form.odiskon.value=eval(diskon);
+      document.form.ototal.value=eval(total);
+    }</script></body></html>
