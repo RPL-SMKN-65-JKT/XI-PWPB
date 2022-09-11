@@ -1,0 +1,145 @@
+/* Men-disabled spinners pada input number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  background: rgb(243, 250, 242);
+  margin: 0;
+  padding: 10px;
+}
+
+.container {
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+form {
+  background-color: rgb(236, 236, 236);
+  border-radius: 4px;
+  padding: 15px 25px;
+  width: 400px;
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+}
+
+input:not(#pesan, #hapus) {
+  margin-bottom: 8px;
+  width: 100%;
+  border: 1px solid #333;
+  padding: 3px 5px;
+  outline: none;
+}
+
+input[disabled] {
+  cursor: not-allowed;
+  background-color: rgb(218, 218, 218);
+}
+
+.tombol {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tombol :is(#pesan, #hapus) {
+  cursor: pointer;
+}
+
+.output {
+  display: none;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+
+.output h2 {
+  text-align: center;
+}
+
+.output.tampil {
+  display: block;
+  animation: fade 300ms;
+}
+
+.output p:last-child {
+  color: rgb(32, 204, 55);
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.body{
+  background-image: url('/Jenis-Awan-3.jpg'); background-repeat: no-repeat; background-size: cover;
+}
+
+.informasi {
+  margin-top: 20px;
+  color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 85%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.vertical-bottom {
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  /* left: 50%; */
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.informasi span:first-child {
+  margin-bottom: 10px;
+  font-size: inherit;
+}
+
+.informasi span {
+  font-size: 0.95em;
+}
+
+.informasi span > span {
+    color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+  margin-top: 270px;
+  text-align: center;
+}
