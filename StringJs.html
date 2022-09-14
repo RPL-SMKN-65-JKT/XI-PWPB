@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objek String Pada Javascript</title>
+    <style>
+      script {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Method dalam objek string pada Javascript</h1>
+    <ul>
+      <li>
+        <input type="button" value="string.charAt()" onclick="charAt()" />
+      </li>
+      <br />
+      <li>
+        <input
+          type="button"
+          value="string.charCodeAt()"
+          onclick="charCodeAt()"
+        />
+      </li>
+      <br />
+      <li>
+        <input type="button" value="string.concat()" onclick="concat()" />
+      </li>
+      <br />
+    </ul>
+  </body>
+  <script>
+    function charAt() {
+      var tes = "";
+
+      document.writeln("Var tes :  <br>");
+
+      /*  Output nya : tes.charAt(0)
+                    tes.charAt(6)
+            0 yaitu huruf pertama pada var tes dan 6 huruf ke 6 pada var tes
+        */
+      document.writeln("Output : ");
+
+      /* charAt Output */
+      document.writeln(tes.charAt(0));
+      document.writeln(tes.charAt(0));
+    }
+
+    function charCodeAt() {
+      var tes = "";
+
+      document.writeln("Var tes :  <br>");
+
+      /*  Output nya : tes.charCodeAt(0)
+                       tes.charCodeAt(0)
+            Dapat angka  karena = 
+            Dapat angka  karena =
+        */
+      document.writeln("Output : ");
+
+      /*Output*/
+      document.writeln(tes.charCodeAt(0));
+      document.writeln(tes.charCodeAt(8));
+    }
+
+    function concat() {
+      var tes = "";
+
+      document.writeln("Var tes :  <br>");
+
+      /*  Output nya : tes.concat()
+                 tes.concat(1303)
+    Dapat karna menggunakan concat
+    Dapat 1303 karna menggunakan concat
+*/
+      document.writeln("Output : <br>");
+
+      /*Output*/
+      document.writeln(tes.concat("  <br> "));
+      document.writeln(tes.concat(" <br> "));
+    }
+  </script>
+</html>
