@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Buat judul title -->
+    <script language="Javascript">
+      // Embed javascript ke HTML
+      function warning(pesan_kita) {
+        alert(pesan_kita);
+      }
+      // a function contain some code that will be executed by an event or a call that function
+      // pembuat pesaan di website alert
+      function password(pesan_promt, pesan_sukses, pesan_gagal) {
+        var passwd = prompt(pesan_promt);
+        // var element represents the name of a variable in amathematical e
+        if (passwd != "Petugas") {
+          alert(pesan_gagal);
+        } else {
+          alert(pesan_sukses);
+        }
+        // if else executes a block of code if a specied condition is true
+      }
+    </script>
+    <!-- Ini untuk pemrograman javascript di HTML -->
+  </head>
+  <body onload="warning('Dilarang Masuk Selain Teman renhad');">
+    <center>
+      <p><b>TEMPAT RAHASIA</b></p>
+      <p>
+        Sekali lagi saya tegaskan jangan memasuki area ini. BERBAHAYA !!! <br />
+        Welcome To World Renhad
+      </p>
+      <!-- Element paragraphs di html -->
+      <a
+        href="javascript: password('Masukkan Password :', 'Oiya renhad Manis >_<', 'Yuk isi yang benar !');"
+        >Masuk =></a
+      >
+      <!-- memasukan suatu element di berbeda tempat menggunakan a href -->
+    </center>
+  </body>
+</html>
