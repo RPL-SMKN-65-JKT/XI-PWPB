@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/* Navbar */
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: rgb(27, 33, 59);
+    justify-content: center;
+    height: 55px;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+nav ul li a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+/* Home */
+
+.bghome {
+    background-color: rgb(43, 43, 114);
+    background-size: cover;
+    background-position: center;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: white ;
+}
+
+/* Profile */
+
+.container {
+    border: 3px solid white;
+    background-color: white;
+    text-align: center;
+}
+
+/* social */
+
+h2 a {
+    text-decoration: none;
+    padding: 20px;
+}
+
+.ig a {
+    color: tomato   ;
+}
+
+.wa a {
+    color: rgb(98, 236, 105);
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 25px;
+    }
+}
