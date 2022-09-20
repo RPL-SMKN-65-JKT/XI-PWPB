@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  overflow-x: hidden;
+}
+
+/* navbar */
+
+nav {
+  display: flex;
+  background-color: #0d6efd;
+  justify-content: space-around;
+  padding: 8px 0;
+  color: white;
+  /* height: 50px; */
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  font-family: "Monsterrat", sans-serif;
+  z-index: 9999;
+}
+
+nav .logo {
+  font-family: "Pacifico", cursive;
+  letter-spacing: 3px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.lst {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+nav ul li a .lst:hover {
+  color: #0d6efd;
+  background-color: white;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  top: -5px;
+  left: -5px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+}
+
+/* Responsive Breakpoint */
+
+/* Ukuran Tablet */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+}
+
+/* Ukuran Mobile */
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0d6efd;
+    z-index: -1;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #e2edff;
+}
+
+#gallery {
+  background-color: #e2edff;
+}
+
+section {
+  padding-top: 6rem;
+}
+
+.overlay {
+  position: relative;
+}
+
+.mask {
+  position: relative;
+}
+
+img.gmbr {
+  transition: all 0.5s;
+  opacity: 50%;
+}
+
+.overlay:hover a .mask img {
+  opacity: 100%;
+}
+
+/* SocMed */

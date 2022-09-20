@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WaGether</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="icon" href="img/logo corel.png" type="image/png" />
+  </head>
+  <body onload="tanggalan()">
+    <!-- Awal Navbar -->
+    <nav class="navbar navbar-dark navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="img/logo web.png" alt="" /> WaGether</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-3">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown me-3" aria-current="page">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-current="page" aria-expanded="false"> List </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item disabled" href="#">List Anime</a></li>
+                <li><a class="dropdown-item" href="ListMovie.html">List Movie</a></li>
+              </ul>
+            </li>
+            <li class="tglist">
+              <span id="hours"></span>
+              <span>•</span>
+              <span id="day"></span>
+              <span id="date"></span>
+              <span id="month"></span>
+            </li>
+            <li class="nav-item me-3 d-none d-lg-flex">
+              <button class="wrn-btn vio"><i class="bi bi-camera-video-fill"></i> Start Nobar</button>
+            </li>
+            <li class="nav-item d-none d-lg-flex">
+              <button class="wrn-btn wht"><i class="bi bi-box-arrow-in-right"></i> Join Nobar</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Carousel Anime -->
+    <section>
+      <div id="carouselExampleCaptions" class="carousel slide w-50 mx-auto mt-3 d-lg-block d-none" data-bs-ride="carousel">
+        <!-- <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div> -->
+        <div class="carousel-inner">
+          <a href=""
+            ><div class="carousel-item active" data-bs-interval="5000" data-bs-pause="hover">
+              <img src="img/carousel/OnePiece.webp" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="teks">One Piece</h5>
+                <p class="teks">Bercerita tetang seorang laki-laki bernama Monkey D. Luffy, yang menentang ....</p>
+              </div>
+            </div>
+          </a>
+          <div class="carousel-item" data-bs-interval="5000" data-bs-pause="hover">
+            <img src="img/carousel/Anya.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="teks">Spy X Family</h5>
+              <p class="teks">Untuk agen yang dikenal sebagai "Twilight", tidak ada perintah yang terlalu tinggi jika demi perdamaian. Beroperasi sebagai ....</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000" data-bs-pause="hover">
+            <img src="img/carousel/KnY.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="teks">Demon Slayer</h5>
+              <p class="teks">Sejak dahulu kala, ada banyak rumor tentang iblis pemakan manusia yang bersembunyi di hutan. Karena itu ....</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000" data-bs-pause="hover">
+            <img src="img/carousel/AOT.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="teks">Attack On Titan</h5>
+              <p class="teks">Selama beratus-ratus tahun manusia menjadi mangsa para Titan. Untuk berlindung dari serangan para Titan, umat manusia membangun ....</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000" data-bs-pause="hover">
+            <img src="img/carousel/NarutoS.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="teks">Naruto Shippuden</h5>
+              <p class="teks">Sudah dua setengah tahun sejak Naruto Uzumaki meninggalkan Konohagakure, Desa Konoha, untuk pelatihan intensif ....</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000" data-bs-pause="hover">
+            <img src="img/carousel/FMAB.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="teks">Full Metal Alchemist Brotherhood</h5>
+              <p class="teks">Alkimia terikat oleh Hukum Setara Setara ini-sesuatu yang oleh saudara laki-laki Edward dan Alphonse Elric baru menyadari setelah mencoba transmutasi manusia: satu ....</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000" data-bs-pause="hover">
+            <img src="img/carousel/conan.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="teks">Detective Conan</h5>
+              <p class="teks">Shinichi Kudo adalah seorang detektif SMU berumur tujuh belas tahun yang biasa disebut “Sherlock Holmes moderen.” Namun, suatu malam ....</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000" data-bs-pause="hover">
+            <img src="img/carousel/Bleach.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="teks">Bleach</h5>
+              <p class="teks">Ichigo Kurosaki adalah seorang siswa sekolah menengah biasa-sampai keluarganya diserang oleh Hollow, roh korup yang berusaha melahap jiwa manusia. Saat itulah ia ....</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000" data-bs-pause="hover">
+            <img src="img/carousel/HxH.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="teks">Hunter X Hunter</h5>
+              <p class="teks">Hunter adalah orang yang berkeliling dunia melakukan berbagai tugas berbahaya. Yakni menangkap penjahat, melewati daratan yang ....</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000" data-bs-pause="hover">
+            <img src="img/carousel/Haikyuu.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="teks">Haikyuu</h5>
+              <p class="teks">Sebuah peristiwa kebetulan dipicu cinta Shoyo Hinata untuk voli. Klubnya tidak memiliki anggota, tapi entah bagaimana bertahan dan akhirnya ....</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000" data-bs-pause="hover">
+            <img src="img/carousel/DrStone.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="teks">Dr.Stone</h5>
+              <p class="teks">Suatu hari, seluruh umat manusia berubah menjadi batu karena kilatan cahaya yang menyilaukan. Setelah beberapa ribu tahun berlalu, anak SMA bernama ....</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000" data-bs-pause="hover">
+            <img src="img/carousel/JJK.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="teks">Jujutsu Kaisen</h5>
+              <p class="teks">Yuji Itadori, remaja yang luar biasa atletik namun lebih memilih untuk melakukan penelitian supernatural di sekolahnya. Kakeknya meminta Yuji untuk ....</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000" data-bs-pause="hover">
+            <img src="img/carousel/TokRev.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="teks">Tokyo Revengers</h5>
+              <p class="teks">Kehidupan Takemichi Hanagaki berada pada titik terendah sepanjang masa. Tepat ketika dia berpikir itu ....</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000" data-bs-pause="hover">
+            <img src="img/carousel/BNHA.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="teks">My Hero Academia</h5>
+              <p class="teks">Menceritakan tentang seseorang yang bernama Izuku Midoriya yang tidak memiliki bakat akan tetapi dia sangat ingin menjadi Pahlawan ....</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- Akhir Carousel -->
+
+    <!-- Judul -->
+    <div class="judul">
+      <p class="h2 text-center mt-5">List Anime</p>
+    </div>
+    <!-- Akhir Judul -->
+
+    <!-- Awal Card -->
+    <div class="kotak">
+      <ul>
+        <li>
+          <a href="">
+            <img src="img/nartoh.jpg" alt="naruto" />
+            <span>Naruto Shippuden</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/conan.jpg" alt="naruto" />
+            <span>Detective Conan</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/hxh.jpg" alt="naruto" />
+            <span>Hunter X Hunter</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/bleach.jpg" alt="naruto" />
+            <span>Bleach</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/SxF.jpg" alt="naruto" />
+            <span>Spy X Family</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/KnY.jpg" alt="naruto" />
+            <span>Demon Slayer</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/SGate.jpg" alt="naruto" />
+            <span>Steins;Gate</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/FMAB.jpg" alt="naruto" />
+            <span
+              >Full Metal Alchemist <br />
+              Brotherhood</span
+            >
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/VSaga.jpg" alt="naruto" />
+            <span>Vinland Saga</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/CoE.jpg" alt="naruto" />
+            <span>Classroom of The Elite</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/DbZ.jpg" alt="naruto" />
+            <span>Dragon Ball Z</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/Haikyuu.jpg" alt="naruto" />
+            <span>Haikyuu</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/AssC.jpg" alt="naruto" />
+            <span>Assassination Classroom</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/aot.jpg" alt="naruto" />
+            <span>Attack On Titan</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/DrStone.jpg" alt="naruto" />
+            <span>Dr.Stone</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/TokRev.jpg" alt="naruto" />
+            <span>Tokyo Revengers</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Akhir Card -->
+
+    <!-- Footer -->
+    <footer class="bg-black text-white text-center pb-2 align-items-center">
+      <p>Copyright© 2022 <img src="img/logo white.png" alt="" /> WaGether</p>
+      <p>
+        Made with <a href="https://getbootstrap.com/" class="text-decoration-none link-primary"> <i class="bi bi-bootstrap"></i> </a> by <a href="../../index.html" class="text-decoration-none link-info"> Fathul Bari </a> (13)
+      </p>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/sendiri.js"></script>
+  </body>
+</html>

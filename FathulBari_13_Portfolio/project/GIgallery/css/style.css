@@ -1,0 +1,232 @@
+/* Font */
+@font-face {
+    font-family: 'poppins';
+    src: url(../asset/fonts/poppins/poppins-regular-webfont.woff) format('woff'),
+         url(../asset/fonts/poppins/poppins-regular-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hywenhei85w';
+    src: url('zh-cn-webfont.woff2') format('woff2'),
+         url('zh-cn-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Style Utama */
+body {
+    font: 18px/36px 'hywenhei85w';
+    background-image: url(../asset/img/bg/Favonius.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 50px 0;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 50px 0;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+}
+
+.container {
+    width: 600px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    opacity: .95;
+}
+
+.gallery li {
+    width: 120px;
+    height: 120px;
+    border: 5px solid #666; 
+    float: left;
+    margin-right: 20px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.gallery li, .gallery li span, .gallery li a img {
+    border-radius: 50%;
+}
+
+.gallery li span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(200, 200, 200, .5);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    text-shadow: 1px 1px 1px #000000;
+    opacity: 0;
+    transition: .3s;
+    transform: scale(0) rotate(0);
+}
+
+.gallery li .jean {
+    color: #8cd8b9;
+}
+
+.gallery li .kaeya {
+    color: #c0f7ff;
+}
+
+.gallery li .eula {
+    color: #c0f7ff;
+}
+
+.gallery li .albedo {
+    color: #f4c28c;
+}
+
+.gallery li .amber {
+    color: #ff5a00;
+}
+
+.gallery li .klee {
+    color: #ff5a00;
+}
+
+.gallery li .lisa {
+    color: #bf00ff;
+}
+
+.gallery li .sucrose {
+    color: #8cd8b9;
+}
+
+.gallery li .noelle {
+    color: #f4c28c
+}
+
+.gallery li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+.clear {
+    clear: both;
+}
+
+/* overlay */
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    transition: .8s;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.overlay img {
+    max-height: 100%;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, .5);
+    opacity: 0;
+}
+
+.overlay:target img {
+    animation: fadeAjah 1s forwards;
+}
+
+.overlay:target .close {
+    animation: slideDownFade .5s .5s forwards;
+}
+
+.overlay:target .next,
+.overlay:target .prev {
+    animation: fadeAjah .5s .5s forwards;
+}
+
+
+
+.overlay .close {
+    position: absolute;
+    top: 60px;
+    left: auto;
+    margin-left: 297px;
+    margin-top: 18px;
+    opacity: 0;
+}
+
+.overlay .close:hover {
+    opacity: 1;
+}
+
+/* navigasi */
+.next, .prev {
+    width: 57px;
+    height: 93px;
+    background-image: url(../asset/img/icon/next.png);
+    position: absolute;
+    text-indent: -9999px;
+    top: 40%;
+    margin-left: 50px;
+    opacity: 0;
+}
+
+.prev {
+    background-image: url(../asset/img/icon/prev.png);
+    margin-left: -100px;
+}
+
+/* Animasi */
+@keyframes fadeAjah {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+@keyframes zoomDanFade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDownFade {
+    0% {
+        opacity: 0;
+        margin-top: -20px;
+    }
+
+    100% {
+        opacity: .5;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WaGether</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="icon" href="img/logo corel.png" type="image/png" />
+  </head>
+  <body onload="tanggalan(); JoinButton()">
+    <!-- Awal Navbar -->
+    <nav class="navbar navbar-dark navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="img/logo web.png" alt="" /> WaGether</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-3">
+              <a class="nav-link active" href="#" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item dropdown me-3" aria-current="page">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> List </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="ListAnime.html">List Anime</a></li>
+                <li><a class="dropdown-item" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Masih kosong :(" href="ListMovie.html">List Movie</a></li>
+              </ul>
+            </li>
+            <li class="tglist">
+              <span id="hours"></span>
+              <span>•</span>
+              <span id="day"></span>
+              <span id="date"></span>
+              <span id="month"></span>
+            </li>
+            <li class="nav-item me-3 d-none d-lg-flex">
+              <button class="wrn-btn vio" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Masih kosong :("><i class="bi bi-camera-video-fill"></i> Start Nobar</button>
+            </li>
+            <li class="nav-item d-none d-lg-flex">
+              <button class="wrn-btn wht" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Masih kosong :("><i class="bi bi-box-arrow-in-right"></i> Join Nobar</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+    <!-- Isi -->
+    <div class="isi">
+      <div class="isiteks">
+        <h1>Let's Watch Together</h1>
+        <h5 style="font-weight: normal">Nobar Kapanpun & Dimanapun</h5>
+        <br />
+        <br />
+        <br />
+        <br />
+        <span class="tekshome">
+          <button class="wrn-btn vio" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Masih kosong :("><i class="bi bi-camera-video-fill"></i><span> Start Nobar</span></button>
+          <span>or</span>
+          <span class="isikode">
+            <span><i class="bi bi-keyboard"></i></span>
+            <span><input type="text" name="kode" id="kode" style="outline: none; border: none" class="kode" placeholder="Enter Nobar Code" onkeyup="JoinButton()" size="10" maxlength="10" /></span>
+          </span>
+          <a href="ListAnime.html">
+            <button class="joinbtn" id="joinbtn">Join</button>
+          </a>
+        </span>
+        <br />
+        <br />
+      </div>
+      <div class="foto">
+        <img src="img/Frame 1.png" alt="" />
+      </div>
+    </div>
+    <!-- Akhir Isi -->
+    <!-- Footer -->
+    <footer class="bg-black text-white text-center pb-2 d-flex flex-column justify-content-center align-items-center">
+      <p>Copyright© 2022 <img src="img/logo white.png" alt="" /> WaGether</p>
+      <p>
+        Made with <a href="https://getbootstrap.com/" class="text-decoration-none link-primary"> <i class="bi bi-bootstrap"></i> </a> by <a href="../../index.html" class="text-decoration-none link-info"> Fathul Bari </a> (13)
+      </p>
+    </footer>
+    <!-- Akhir footer -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/sendiri.js"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
+  </body>
+</html>
