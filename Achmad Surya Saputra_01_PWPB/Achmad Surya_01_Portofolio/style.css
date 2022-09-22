@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/* Navbar */
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: rgb(27, 33, 59);
+    justify-content: center;
+    height: 55px;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+nav ul li a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(101, 101, 236);
+}
+
+/* Home */
+
+.bghome {
+    background-color: rgb(43, 43, 114);
+    background-size: cover;
+    background-position: center;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: white ;
+}
+
+h1:hover {
+  transform: scale(1.2);  
+  cursor: pointer;
+  text-shadow: 2px 2px rgb(20, 225, 252);
+}
+
+/* Profile */
+
+.container {
+    border: 3px solid white;
+    background-color: white;
+    box-shadow: 5px 10px #888888;
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 50px;
+}
+
+.container:hover {
+    transform: scale(0.9);
+}
+
+.bghome img {
+    height: 200px;
+}
+
+/* social */
+
+h2 a {
+    text-decoration: none;
+    padding: 20px;
+}
+
+.ig a {
+    color: white;
+}
+
+.ig a:hover {
+    color: tomato;
+}
+
+.wa a {
+    color: white;
+}
+
+.wa a:hover {
+    color: rgb(98, 236, 105);
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .container {
+        margin: 20px;
+    }
+
+    .ins {
+        padding-left: 30px;
+    }
+
+    .wha .wa {
+        padding-right: 30px;
+    }
+}
