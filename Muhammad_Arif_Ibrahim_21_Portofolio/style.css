@@ -1,0 +1,437 @@
+/* google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap');
+
+/* google font end */
+
+
+*, html {
+    padding: 0;
+    margin: 0;
+    scroll-behavior:smooth ;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* navbar */
+
+nav {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    color: white; 
+    padding: 5px 0;
+    align-items: center;
+}
+
+nav .logo {
+    font-family: 'Playfair';
+    letter-spacing: 3px;
+    margin-top: 15px;
+    font-size: 9px;
+    cursor: default;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: rgb(234, 132, 132);
+    text-decoration: none;
+    font-size: 0.99em;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+/* Hamburger */
+.menu {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -2px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 6;
+}
+
+.menu span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color:  rgb(227, 185, 185);
+    border-radius: 3px;
+    transition: all .5s;
+    z-index: 5;
+}
+
+
+/* Hamburger animation */
+
+.menu span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu input:checked ~ span:nth-child(2) {
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu input:checked ~ span:nth-child(4) {
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0px);
+}
+
+.menu input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0)
+}
+
+/* Hamburger  end*/
+
+/* navbar end */
+
+
+
+/* video & tulisan */
+
+.bg video {
+    width: 100%;
+}
+
+.bg h2 {
+    transform: translateX(530px) translateY(-500px) ;
+    font-size: 80px;
+    color: white;
+    font-family: 'Noto Serif JP', serif;
+    position: absolute;
+}
+
+.bg h3 {
+    transform: translateX(605px) translateY(-400px) ;
+    font-size: 40px;
+    color: white;
+    font-family: 'Noto Serif JP', serif;
+    position: absolute;
+}
+
+/* video & tulisan end  */
+
+
+
+/* profile */
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile h1 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.profile img {
+    border: 2px solid black;
+    width: 20%;
+    border-radius:250px;
+    border-color: black;
+    margin: 50px;
+}
+
+.fitur {
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+
+/* profile end  */
+
+
+
+/* anime list */
+
+.ho {
+    background-color: black;
+}
+
+.hey h1 {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-family: 'Diplomata SC', cursive;
+}
+
+.AL {
+    background-color: rgb(39, 34, 34);
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel {
+    width: 50%;
+    margin: auto;
+}
+
+.carousel-inner{
+    border-radius: 40px;
+}
+
+.lis {
+    display: block;
+}
+
+.po span {
+    width: 200px;
+    height: 300px;
+}
+
+.po img {
+    border-radius: 30px;
+    width: 200px;
+    height: 300px;
+    margin: 30px;
+    transition: all .2s ease-in-out;
+}
+
+.po img:hover {
+    transform: scale(1.1);
+}
+
+/* anime list end */
+
+
+
+/* galery */
+
+.lo {
+    background-image: url(/foto/Background\ poster\ 1.png);
+    background-size: 100%;
+    padding: 50px;
+}
+
+.oy {
+    text-align: center;
+    margin: 20px;
+    font-family: 'Amiri Quran', serif;
+}
+
+.oy h1 { 
+    font-size: 50px;
+}
+
+.galery img {
+    width: 80%;
+    margin: 60px;
+}
+
+.hu {
+    display: flex;
+}
+
+.hi {
+    margin-left: 130px;
+}
+
+/* galery end  */
+
+
+
+/* responsive */
+
+/* ukuran tablet */
+
+@media screen and (max-width: 768px){
+    nav ul {
+        width: 50%;
+    }
+
+    .bg h2 {
+        transform: translateX(275px) translateY(-290px) ;
+        font-size: 50px;
+        color: white;
+        font-family: 'Noto Serif JP', serif;
+        position: absolute;
+    }
+    
+    .bg h3 {
+        transform: translateX(315px) translateY(-235px) ;
+        font-size: 30px;
+        color: white;
+        font-family: 'Noto Serif JP', serif;
+        position: absolute;
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+    }
+    
+    .profile h1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 25px;
+    }
+    
+    .profile img {
+        border: 2px solid black;
+        width: 35%;
+        border-radius:250px;
+        border-color: black;
+        margin: 50px;
+    }
+    
+    .po span {
+        width: 175px;
+        height: 275px;
+    }
+    
+    .po img {
+        border-radius: 30px;
+        width: 175px;
+        height: 275px;
+        margin: 30px;
+        transition: all .2s ease-in-out;
+    }
+    
+    .lis {
+        display: contents;
+    }
+
+    .carousel {
+        width: 80%;
+        margin: auto;
+    }
+    
+    .hi {
+        margin-left:50px;
+    }
+}
+
+
+/* ukuran mobile */
+
+@media screen and (max-width: 576px){
+    .menu {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 4;
+    }
+
+    .bg h2 {
+        transform: translateX(170px) translateY(-190px) ;
+        font-size: 40px;
+        color: white;
+        font-family: 'Noto Serif JP', serif;
+        position: absolute;
+    }
+    
+    .bg h3 {
+        transform: translateX(210px) translateY(-140px) ;
+        font-size: 20px;
+        color: white;
+        font-family: 'Noto Serif JP', serif;
+        position: absolute;
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+    }
+    
+    .profile h1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 15px;
+    }
+    
+    .profile img {
+        border: 2px solid black;
+        width: 25%;
+        border-radius:250px;
+        border-color: black;
+        margin: 50px;
+    }
+
+    .po span {
+        width: 175px;
+        height: 275px;
+    }
+    
+    .po img {
+        border-radius: 30px;
+        width: 150px;
+        height: 250px;
+        margin: 20px;
+        margin-left: 50px;
+        transition: all .2s ease-in-out;
+    }
+    
+    .lis {
+        display: contents;
+    }
+
+    .carousel {
+        width: 80%;
+        margin: auto;
+    }
+
+    .galery img {
+        width: 80%;
+        margin: 30px;
+    }
+
+    .hi {
+        margin-left:30px;
+    }
+}
+
+/* responsive end */
