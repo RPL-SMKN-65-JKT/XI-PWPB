@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo"><h1>Arva Revanza</h1></div>
+        <div class="openMenu" id="openMenu"><i class="fa-solid fa-bars" style="color: black !important;"></i></i></div>
+        <ul class="mainMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="closeMenu"><i class="fa fa-times" style="color: black !important;"></i></i></div>
+            <span class="icons">
+                <a href="https://www.instagram.com/revanzasono/" target="_blank"><i class="fa-brands fa-solid fa-instagram" style="color: black !important;"></i></i></a>
+                <a href="https://github.com/imArva" target="_blank"><i class="fa-brands fa-github" style="color: black !important;"></i></i></a>
+                <a href="https://wa.me/6282249852341?text=halo%20syg" target="_blank"><i class="fa-brands fa-whatsapp" style="color: black !important;"></i></i></a>
+            </span>
+        </ul>
+    </nav>
+
+    <div data-aos="fade-right" data-aos-duration="500">
+        <h2 class="name" id="name-anima">Hi!, I'm Arva Revanza</h2>
+        <h3 class="occupation">Student / Programmer wannabe</h3>
+        <h3 class="scroll"> <i class="fa-sharp fa-solid fa-arrow-down"></i>Scroll to know more about me! <i class="fa-sharp fa-solid fa-arrow-down"></i></h3>
+    </div>
+    
+    <section id="about"></section>
+    <div data-aos="fade-up" class="about" data-aos-duration="1500">
+        <h1>About me</h1>
+        <p>A boy who born in 24th August 2006, enthusiat in tech & music.</p>
+        <p>Started my coding journey in 2020, when pandemic just happened.</p> <br>
+        <p>First programming language i learned was c++, with <a href="https://www.youtube.com/playlist?list=PLZS-MHyEIRo4Ze0bbGB1WKBSNMPzi-eWI">Kelas Terbuka</a> on YouTube.</p>
+        <p>I didn't know why i chose c++ at first. Until now i still didn't have any project made with that language lol.</p> <br>
+        <p>After that i started to learn language like html, css, js, a little bit of php, and go. I also had experiment in game development with godot engine.</p>
+        <p>For now i just try to make something with my noob skill and looking forward to learn Microcontrollers like Arduino or Raspberry Pi very soon.</p>
+    </div>
+
+    <section id="projects"></section>
+    <div data-aos="fade-up" class="about" data-aos-duration="1500">
+        <h1>My Projects</h1>
+        <h2>-</h2>
+        <h2>-</h2>
+        <h2>-</h2>
+        <h2>-</h2>
+    </div>
+
+    <section id="contact"></section>
+    <div data-aos="flip-up" class="about" data-aos-duration="1500">
+        <h1>Contact me</h1>
+        <div style="margin-top: 5vh;">
+            <a href="https://www.instagram.com/revanzasono/" target="_blank"><i class="fa-brands fa-solid fa-instagram" style="color: black !important; font-size: 3rem;"></i></i></a>
+            <a href="https://github.com/imArva" target="_blank"><i class="fa-brands fa-github" style="color: black !important; font-size: 3rem;"></i></i></a>
+            <a href="https://wa.me/6282249852341?text=halo%20syg" target="_blank"><i class="fa-brands fa-whatsapp" style="color: black !important; font-size: 3rem;"></i></i></a>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script src="anime.min.js"></script>
+    <script src="letterize.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+
+        const test = new Letterize({
+            targets: "#name-anima",
+            className: "letter"
+        });
+
+        var animation = anime.timeline({
+            targets: test.listAll,
+            delay: anime.stagger(50),
+            loop: true
+        });
+
+        animation.add({
+            translateY: -20
+        }).add({
+            translateY: 0
+        });
+
+        var tl = anime.timeline({
+            easing: 'easeOutExpo',
+        });
+
+        tl.add({
+            targets: 'nav',
+            opacity: 1,
+            duration: 2000
+        });
+    </script>
+</body>
+</html>
