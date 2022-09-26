@@ -23,7 +23,7 @@ nav{
 nav ul{
     display: flex;
     list-style: none;
-    width: 40%;
+    width: 50%;
     justify-content: space-between;
 }
 
@@ -220,14 +220,14 @@ nav ul li a:hover{
 
 
 
-@media (max-width: 840px){
+/* @media (max-width: 840px){
     nav ul{
         display: flex;
         list-style: none;
         width: 50%;
         justify-content: space-between;
     }
-}
+} */
 
 @media (min-width: 801px){
     
@@ -293,7 +293,7 @@ nav ul li a:hover{
 
 
 
-@media (max-width: 576px){
+@media (max-width: 840px){
     nav ul{
         position: absolute;
         right: 0;
