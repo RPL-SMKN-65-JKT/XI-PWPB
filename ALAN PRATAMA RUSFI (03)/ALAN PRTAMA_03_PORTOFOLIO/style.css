@@ -9,9 +9,11 @@ body{
     color: white !important;
     background-color: #FB5C5C !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden !important;   */
+    /*  */
 }
 nav{
+    width: 100%;
     border-bottom: 2px solid white;
     display: flex;
     background: #0099FF;
@@ -36,6 +38,7 @@ nav ul li a:hover{
 .menu-toggle{
     display: none;
     flex-direction: column;
+    margin-left: 10px;
     height: 20px;
     justify-content: space-between;
     position: relative;
@@ -135,6 +138,7 @@ nav ul li a:hover{
 
 
 .page3{
+    width: 92vw;
     margin-top: 40px;
     height: auto;
     background-color: #FB5C5C;
@@ -143,6 +147,7 @@ nav ul li a:hover{
 .page3 hr{
     border: 2px solid black;
     margin-top: -6px;
+    width: 101.8%;
 }
 .page3 h2{
     font-size: 30px;
@@ -300,8 +305,8 @@ nav ul li a:hover{
         justify-content: space-evenly;
         z-index: -1;
         width: 100%;
-        transform: translateX(100%);
-        transition: all 1s;
+        transform: translateY(-100%);
+        transition: all 1.4s;
     }
 
     nav ul.slide{
