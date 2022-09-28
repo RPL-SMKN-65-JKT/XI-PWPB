@@ -24,3 +24,12 @@
 
 <h4>Follow Me</h3>
 <a href="https://www.instagram.com/yankurniawan284" target="_blank"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?&style=flat-square&logo=instagram&logoColor=white" alt="Instagram"></a>
+[![Youtube](https://img.shields.io/badge/Youtube-FF0014?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/channel/UCL_jlZHYd4YOIS0uXkKVahg)
+
+## &#x1f4c8; GitHub Stats
+<a href="https://github.com/ItsRealNise">
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=ItsRealNise&count_private=true&show_icons=true&hide_border=false&custom_title=ItsRealNise%20Github%20Stats&include_all_commits=true&hide=issues&theme=tokyonight" alt="ItsRealNise GitHub Stats" />
+</a>
+<a href="https://github.com/ItsRealNise">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ItsRealNise&layout=compact&hide_border=false&theme=tokyonight" />
+</a>
