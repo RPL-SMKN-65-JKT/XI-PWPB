@@ -8,7 +8,7 @@ Ini adalah kumpulan tugas PWPB kelas XI - RPL
 
 <p>Nomor Absen</p>
 
-| No Absen | Nama Siswa |
+| No | Nama Siswa |
 | --- | --- |
 | `1` | *Achmad Surya Saputra* |
 | `2` | *Aisyah Imeria Putri* |
