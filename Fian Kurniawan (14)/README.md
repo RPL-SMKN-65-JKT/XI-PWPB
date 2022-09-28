@@ -14,6 +14,7 @@
 <br>
 ![bootstrap](https://img.shields.io/badge/-bootstrap-grey?style=for-the-badge&logo=bootstrap&logoColor=white&labelColor=8E2DE2)
 ![php](https://img.shields.io/badge/-php-grey?style=for-the-badge&logo=php&logoColor=white&labelColor=8E2DE2)
+![php](https://img.shields.io/badge/-laravel-grey?style=for-the-badge&logo=laravel&logoColor=white&labelColor=8E2DE2)
 <br>
 ![mysql](https://img.shields.io/badge/-mysql-grey?style=for-the-badge&logo=mysql&logoColor=white&labelColor=8E2DE2)
 ![firebase](https://img.shields.io/badge/-firebase-grey?style=for-the-badge&logo=firebase&logoColor=white&labelColor=8E2DE2)
