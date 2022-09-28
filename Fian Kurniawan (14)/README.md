@@ -1,4 +1,5 @@
 <h2> FIAN KURNIAWAN PROFILE </h2>
+<p><b>Dilarang Copas Bilang Dulu ke Orangnya Atau aink bilang guru biar 0 nilainya</b></p>
 <img align="right" alt="GIF" src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif" width="500"/>
 
 <h3> 👨🏻‍💻Tentang Saya </h3>
