@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: grey;
+            text-align: center;
+            margin: auto;
+        }
+
+        h1{
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            justify-content: space-between;
+        }
+        .button{
+            background-color: #4CAF50; 
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+    <script>
+        function loadWeb() {
+            alert("youkoso sakasama no sekai");
+        }
+
+        function formpassword(pesan, pesan_berhasil, pesan_gagal) {
+            var password = prompt(pesan);
+            if (password == "ara ara") {
+                alert(pesan_berhasil);
+            } else {
+                alert(pesan_gagal);
+            }
+        }
+    </script>
+</head>
+<body onload="loadWeb()">
+    <h1>Selamat Datang Tamu Yang Tak Di Undang</h1>
+    <img src="https://cdn.idntimes.com/content-images/community/2022/08/fromandroid-7d79b7f3c0ed19d9628f262fb94b0c37.jpg">
+    <br>
+    <a class="button" onclick="formpassword('Halo tuan apakah anda tau passwordnya', 'Maafkan tuan telah menyatiri anda', 'Beliyaw ini ingin disatirkan')">Diem</a>
+</body>
+</html>
