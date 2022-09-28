@@ -6,7 +6,7 @@
 - 🎓 Sekolah di SMKN 65 JAKARTA
 - ✍️ &nbsp; Newbie Programmer, Learning More Language
 
-<h3> 👨 Bahasa Program Yang Dipelajari </h3>
+<h3> 👨 Bahasa Program dan Toolsnya </h3>
 
 ![HTML5](https://img.shields.io/badge/html%205-grey?style=for-the-badge&logo=html5&logoColor=white&labelColor=8E2DE2)
 ![CSS](https://img.shields.io/badge/css%20-grey?style=for-the-badge&logo=css3&logoColor=white&labelColor=8E2DE2)
