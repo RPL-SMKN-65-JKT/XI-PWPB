@@ -1,0 +1,80 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+
+.fContainer {
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex; /* membuat elemen sejajar ke samping */
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    background-color: palevioletred;
+}
+
+.brand {
+    margin: 0;
+    padding: 0;
+    color: royalblue;
+
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation > li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.navigation > li > a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navigation > li > a:hover {
+    color: lightskyblue;
+    transition: all .3s ease-in-out;
+}
+
+.bghome {
+    background-image: url(tika.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border: 3px solid rgb(52, 78, 126);
+    background: rgb(155, 156, 225);
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+h2 a {
+    text-decoration: none;
+    padding: 20px;
+}
+
+.ig a {
+    color: white;
+}
+
+.ig a:hover {
+    color: tomato;
+}
