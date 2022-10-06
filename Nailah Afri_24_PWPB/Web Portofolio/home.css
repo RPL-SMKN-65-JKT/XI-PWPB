@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 92vh;
+    background-image: url(chisato.jpg);
+    background-size: cover;
+}
+nav{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 8px 0;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bolder;
+    background-color: #19412f;
+}
+
+.logo{
+    width:80px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 100%;
+}
+nav ul li a{
+    display: inline-block;
+    list-style: none;
+    margin: 8px 1px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(209, 184, 44);
+}
+
+nav ul li :hover{
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+    font-weight:bold;
+
+}
+.detail{
+    margin-left: 8%;
+    margin-top:15%;
+}
+h1{
+    font-size: 200%;
+    font-weight: 100px;
+    color: rgb(209, 184, 44);
+}
+p{
+    font-size: 12px;
+    font-weight: bolder;
+    color: rgb(209, 184, 44);
+}
+
+.detail{
+    animation: slideleft 1s linear forwards;
+}
+@keyframes slideleft{
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+.detail a{
+    background: cadetblue;
+    padding:8px 8px;
+    font-weight: bolder;
+    display:inline-block;
+    margin:0px;
+    border-radius: 5px;
+    color: aliceblue;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.detail p{
+    font-size: 140px;
+    line-height: 100px;
+    margin-left: -10px;
+}
+
+.detail h1{
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 15s linear infinite;
+}
+
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.background{
+    padding-top: 100px;
+}
+
+.footer{
+    color:aliceblue;
+    background-color: #19412f;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 8px;
+    padding: 10px;
+    
+}
+
+.footer a {
+    color: rgb(209, 184, 44);
+    text-decoration: none;
+}
+
+.h1 a{
+    font-size: 17px;
+    margin: 5px;
+}
+
+.p{
+    position: relative;
+}
