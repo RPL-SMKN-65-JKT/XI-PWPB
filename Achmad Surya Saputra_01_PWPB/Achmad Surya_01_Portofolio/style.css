@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+ 
+/* Navbar */
+nav {
+    padding: 10px;
+    text-align: center;
+    background-color: #0e1b26;
+}
+
+.navigasi ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    
+}
+
+div nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.navigasi ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+.navigasi ul li a:hover {
+    color: royalblue;
+}
+
+h3 {
+    font-family: "Sofia", sans-serif;
+    font-size: 35px;
+}
+
+h3 a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+h3 a:hover{
+    color: royalblue;
+}
+
+hr {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/*home*/
+
+.home {
+    background-color: #0b2b46;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -75px;
+}
+
+.font-home {
+    color: rgb(180, 180, 180);
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+.font-home a {
+    color: white;
+    text-decoration: none;
+}
+
+.font-home a:hover{
+    color: royalblue;
+}
+
+/* About */
+
+.about {
+    background-color: white;
+    height: 30vh;
+}
+
+.font-about {
+    font-family: "Sofia", sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    color: #0b2b46;
+}
+
+p {
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Gemunu Libre', sans-serif;
+    color: #0b2b46;
+}
+
+p a {
+    color: #0b2b46;
+}
+
+/* Project */
+.project {
+    background-color: #0b2b46;
+    height: 130vh;
+    text-decoration: none;
+}
+
+.font-project {
+    color: white;
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+    padding-top: 50px;
+}
+
+.font-p-project {
+    color: white;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+.card a {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding-bottom: 50px;
+    padding: 20px;
+}
+
+.card a img{
+    border-radius: 20px;
+    mix-blend-mode: normal;
+}
+
+.card a img:hover {
+    mix-blend-mode:screen;
+}
+
+p a{
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    height: 15vh;
+    background-color: #0e1b26;
+}
+
+.font-footer {
+    color: white;
+    padding-top: 30px;
+}
+
+.font-footer a{
+    color: white;
+}
+
+.font-footer a:hover{
+    color: royalblue;
+}
+
+
+/* Responsive */
+@media screen and (max-width : 500px) {
+    h3 {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    p {
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .card a{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 50px;
+    padding: 20px;
+    }
+    
+    .project {
+        height: 80vh
+    }
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+                
