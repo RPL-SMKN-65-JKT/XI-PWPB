@@ -1,0 +1,352 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+    color: rgb(73,132,197);
+    scroll-behavior: smooth;
+}
+
+/*header style*/
+header {
+    height: 80px;
+    border: 1px solid;
+   background-color: white;
+}
+header h1 {
+    display: inline-block;
+    float:left;
+    padding: 12px 24px;
+}
+header h1 a {
+    transition: .3s;
+}
+header h1 a:hover {
+    color:#8294e7;
+}
+header ul {
+    float: right;
+    text-transform: uppercase
+}
+header ul li {
+   padding: 22px; 
+   display: inline-block;
+}
+header ul li a {
+    transition: .3s;
+}
+header ul li a h4:hover {
+    color: #8294e7;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*style icon bar*/
+.mobile-menu {
+    float: right;
+    display: none;
+    padding: 18px;
+}
+.mobile-menu:hover {
+    cursor: pointer;
+}
+#check {
+    display: none;
+}
+
+/*style sidebar*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgba(145, 172, 229, 0.9);
+    transition: .3s;
+    
+}
+.sidebar ul li a {
+    color: rgb(73,132,197);
+}
+.sidebar ul li {
+    padding: 45px;
+    transition: .3s;
+}
+.sidebar ul li:hover {
+    background-color:  #8294e7;
+}
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+/*style homepage*/
+.homepage {
+     background-image: url(unduhan.jpg);
+     padding: 50px 0;
+     background-position: center;
+    background-size: cover;  
+}
+.homepage {
+    padding: 50px 10px;
+}
+.homepage img{
+        background-position: center;
+        background-size: cover;
+        width: 25vw;
+        margin-bottom: 5px;
+}
+.homepage h2{
+    margin-bottom: 3px;
+}
+.home-text h2,
+.home-text h4,
+.home-text h5 p{
+    color:#0b0c10;
+}
+.home-text h6 span{
+    color: rgb(73,132,197);
+}
+.home-text {
+    margin-top: -20px;
+    text-align: left;
+    padding: 5px 40px;
+}
+
+/*style ME*/
+.Me {
+    background-image: url(Namjin\ Fanarts\ ♤.jpg);
+    padding: 50px 0;
+    background-position: center;
+    background-size: cover;
+   
+}
+.Me h2 {
+    margin: -10px;
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+}
+.Me-content {
+    padding: 30px 100px;
+}
+.Me img{
+    background-position: center;
+    background-size: cover;
+    width: 25%;
+    border-radius: 80px;
+    margin-bottom: 50px; 
+    margin-right: auto; 
+    margin-left: auto; 
+    display: block; 
+}
+.Me-text h3,
+.Me-text small {
+    color: #0b0c10;
+}
+.Me-text h3 {
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+}
+.Me-text {
+    margin-top: 10px;
+    text-align: center;
+    text-indent: 40px;
+}
+
+/*style playlist*/
+.La-Playlist {
+    background-image: url(unduhan4.jpg);
+    padding: 50px 0;
+    background-position: center;
+    background-size: cover;
+   
+}
+.La-Playlist h2 {
+    margin: -10px;
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+}
+.La-Playlist span{
+    margin-top: -15px;
+    text-align: center;
+    color: #0b0c10;
+    display: block;
+    text-transform: lowercase;
+}
+.judul-lagu{
+    text-align: center;
+}
+.penyanyi{
+    text-align: center;
+}
+.LaPlaylist-content {
+    padding: 70px 10px;
+}
+.col-4 {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.LaPlaylist-content img{
+    width: 8vw;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+.LaPlaylist-content audio{
+    float: center;
+    width: 70%;
+    outline: none;
+    opacity: .5;
+    padding: 10px;
+}
+.LaPlaylist-content h4 {
+    color:  #0b0c10;
+    text-transform:capitalize;
+}
+.LaPlaylist-content p{
+    color:  #0b0c10;
+    text-transform: inherit;
+}
+
+/*style La Novel*/
+.La-Novel {
+    background-image: url(unduhan7.jpg);
+    padding: 50px 0;
+    background-position: center;
+    background-size: cover;
+}
+.La-Novel h2 {
+    margin: -10px;
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+}
+.La-Novel span{
+    margin-top: -15px;
+     text-align: center;
+     color: #0b0c10;
+     display: block;
+     text-transform: lowercase;
+ }
+.novel-content{
+    padding: 80px 30px;
+}
+.judul-novel {
+    text-align: center;
+}
+.col-2 {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.col-2 img {
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    border-radius: 30px;
+    margin-bottom: 10px;   
+    margin: 20px;
+}
+.col-2 a:hover img {
+   transform: scale(1.2);
+}
+.novel-content h4 span {
+    color:  #0b0c10;
+    text-transform: unset;
+}
+
+/*style FIND ME*/
+.Find-Me {
+    background-image: url(random.jpg);
+    padding: 50px 0;
+    background-position: center;
+    background-size: cover;
+}
+.Find-Me h2 {
+    margin: -10px;
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+} 
+.Find-Me span{
+    margin-top: -15px;
+     text-align: center;
+     color: #0b0c10;
+     display: block;
+ }
+ .find-content {
+    padding: 220px 50px;
+ }
+.col-3 {
+    width: 33.33%;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    padding: 25px 10px;
+}
+.Find-Me h3 {
+    text-align: center;
+    text-transform: lowercase;
+    color:  #0b0c10;
+} 
+.find-content h3 i{
+    text-transform: unset;
+    color:  #0b0c10;
+}
+.Find-Me img {
+    background-position: center;
+    background-size: cover;
+    width: 10%;
+    border-radius: 100px;
+   margin-top: 120px;
+    margin-right: auto; 
+    margin-left: auto; 
+    display: block; 
+}
+
+/*style footer*/
+footer {
+    background-color: white;
+    
+ padding: 20px;
+    text-align: center;
+    background-size: cover;
+}
+footer small {
+    color:  #0b0c10;
+    text-transform: capitalize;
+}
+
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+    header ul {
+       display: none; 
+    }
+    .col-2 {
+        width: 50%;
+    }
+    .col-4 {
+        width: 50%;
+    }
+}
