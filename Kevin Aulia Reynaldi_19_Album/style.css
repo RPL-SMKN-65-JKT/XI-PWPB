@@ -1,0 +1,350 @@
+#book {
+    width:50vw;
+    height:50vh;
+  /*   outline:1px solid black; */
+    position:absolute;
+    left:25vw;
+    top:25vh;
+    perspective:75vw;
+  }
+  
+  #book:before {
+    width:1%;
+    height:100%;
+    background:rgb(160, 160, 160);
+    content:'';
+    position:absolute;
+    left:49%;
+    top:0;
+    box-shadow:0px 10px 10px rgb(160, 160, 160);
+    outline:1px solid rgb(160, 160, 160);
+  }
+  
+  .page {
+    width:50%;
+    height:100%;
+    background:radial-gradient(circle at 0% 100%, #777, #ddd 70%);
+    outline:1px solid black;
+    box-shadow:5px 10px 10px rgba(0,0,0,.15);
+    position:absolute;
+    left:50%;
+    top:0;
+    transition:z-index .01s linear 1s, transform 2s linear;
+    transform-origin:0% 50%;
+    z-index:5;
+    cursor:pointer;
+        
+    font-family:monospace;
+    text-align:center;
+    line-height:50vh;
+  }
+  
+  /* #page5 {
+    transform-origin:-1% 50% !important;
+  } */
+  
+  .front, .back {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+      
+    font-family:monospace;
+    text-align:center;
+    line-height:50vh;
+    
+    opacity:0;
+    transition:opacity .1s linear 1s;
+  }
+  .front {
+    opacity:1;
+  }
+  .back {
+    transform:scaleX(-1);
+  }
+  
+  input {
+    visibility:hidden;
+  }
+  
+  label {
+    width:100%;
+    height:100%;
+    z-index:99;
+    position:absolute;
+    left:0;
+    top:0;
+    margin:0;
+    padding:0;
+  /*   pointer-events:none; */
+  /*   visibility:hidden; */
+  /*   background:red; */
+  }
+  
+  input:checked + .page {
+    transform:rotateY(-180deg); 
+  }
+  
+  input:checked + .page .front {
+    opacity:0;  
+  }
+  input:checked + .page .back {
+    opacity:1;  
+  }
+  
+  #five:checked + .page {
+    z-index:5;
+  }
+  #four:checked + .page {
+    z-index:4;
+  }
+  #three:checked + .page {
+    z-index:3;
+  }
+  #two:checked + .page {
+    z-index:2;
+  }
+  #one:checked + .page {
+    z-index:1;
+  }
+  
+  body {
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    background-color:azure;
+    background-image:linear-gradient(-45deg, rgb(37, 216, 248), rgb(196, 196, 196));
+  }
+  
+  /* interior pages styles */
+  #page1 .front {
+    font-size:2vh;
+    letter-spacing:2vh;
+    line-height:50vh;
+    font-weight:900;
+    text-align:right;
+    background:radial-gradient(circle at 70% 50%, rgb(65, 65, 65) 50%, rgb(160, 160, 160) 40%);
+    color:rgb(255, 255, 255);
+    animation:cover 10s linear infinite;
+  }
+  @keyframes cover {
+    20% { color:lime }
+    40% { color:dodgerblue }
+    60% { color:gold }
+    80% { color:cyan }
+  }
+  
+  #page1 .back {
+    font-size:25vh;
+    color:white;
+    text-shadow:-10px 0px magenta, 10px 0px cyan;
+    background:#222;
+    animation:a 3s linear infinite;
+  }
+  @keyframes a {
+    45% { color:white; }
+    50% { color:#222; }
+    55% { color:white; }
+  }
+  
+  #page2 .front {
+    font-size:25vh;
+    font-family:serif;
+    font-weight:850;
+    background: rgb(204, 204, 204);
+  text-shadow:5px 0px rgba(20, 20, 20, 0.5), 10px 0px rgba(248, 248, 248, 0.4), 15px 0px rgba(43, 43, 43, 0.3), 20px 0px rgba(134, 134, 134, 0.2), 25px 0px rgba(161, 161, 161, 0.1);
+  overflow:hidden;
+  }
+
+  #page2 .front:before {
+    content:'K';
+    width:100%;
+    height:100%;
+    text-align:center;
+    line-height:17vh;
+    position:absolute;
+    left:0;
+    top:0;
+    transform:scaleY(-1);
+    opacity:.25;
+    animation:aa 1s linear infinite;
+  }
+
+  #page2 .front:after {
+    content:'';
+    width:100%;
+    height:20vh;
+    text-align:center;
+    position:absolute;
+    left:0;
+    bottom:-2px;
+    background:linear-gradient(to top, rgb(204, 204, 204) 50%, transparent);
+  }
+  
+  #page2 .back {
+    color:rgb(32, 32, 32);
+    font-size:25vh;
+    font-weight:900;
+    font-family:serif;
+    background:rgb(223, 223, 223);
+    text-shadow:24px 24px rgb(199, 199, 199);
+    animation:slide 10s linear infinite;
+    }
+  
+  @keyframes slide {
+    25% { text-shadow:-24px 24px rgb(199, 199, 199); }
+    50% { text-shadow:-24px -24px rgb(199, 199, 199); }
+    75% { text-shadow:24px -24px rgb(199, 199, 199); }
+    100% { text-shadow:24px 24px rgb(199, 199, 199); }
+  }
+  
+  
+  #page3 .front {
+    background:#222;
+    color:rgb(121, 255, 255);
+    font-size:5vh;
+    font-weight:900;
+    font-family:serif;
+    overflow:hidden;
+  }
+  #page3 .front:before {
+    content:'';
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-size:.5vh .5vh;
+    background-position:-.5vh;
+  }
+
+  #page3 .front:after {
+    content:'';
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:-1px;
+    left:-10px;
+    color:#222;
+    text-shadow:-1px 0px rgb(0, 255, 242), -1px -1px rgb(224, 224, 224), -1px 1px rgb(196, 255, 247);
+  }
+  
+  #page3 .back {
+    background:#222;
+    color:white;
+    font-size:25vh;
+    font-weight:900;
+    font-family:serif;
+    text-shadow:5px 0px rgba(0, 255, 200, 0.5), 10px 0px rgba(248, 248, 248, 0.4), 15px 0px rgba(82, 255, 212, 0.3), 20px 0px rgba(255, 255, 255, 0.2), 25px 0px rgba(150, 150, 150, 0.1);
+    overflow:hidden;
+  }
+  
+  #page3 .back:before {
+    content:'K';
+    width:100%;
+    height:100%;
+    text-align:center;
+    line-height:17vh;
+    position:absolute;
+    left:0;
+    top:0;
+    transform:scaleY(-1);
+    opacity:.25;
+    animation:aa 1s linear infinite;
+  }
+  @keyframes aa {
+    50% { left:5px } 
+  }
+  #page3 .back:after {
+    content:'';
+    width:100%;
+    height:20vh;
+    text-align:center;
+    position:absolute;
+    left:0;
+    bottom:-2px;
+    background:linear-gradient(to top, #222 50%, transparent);
+  }
+  
+  #page4 {
+    overflow:hidden;
+    background:white;
+    
+  }
+
+  #page4 .back {
+    height:calc(100% + 10px);
+    background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+  radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+  radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 rgb(0, 0, 0);
+  background-size: 110px 50vh;
+  background-repeat: repeat-x;
+    color:white;
+    font-size:25vh;
+    font-weight:900;
+    font-family:serif;  
+    text-shadow:-1px -1px rgb(105, 105, 105), 1px -1px rgb(177, 177, 177), 1px 1px rgb(97, 97, 97), -1px 1px rgb(170, 170, 170);
+    animation:bob 10s linear infinite;
+  }
+  
+  @keyframes bob {
+    25% { top:-10px }
+    50% { top:0px; }
+    75% { top:-10px; }
+  }
+  
+  #page4 .back:before {
+    content:'';
+    position:absolute;
+    top:25%;
+    left:40%;
+    background:white;
+    box-shadow:0 0 2px black;
+    width:2.5vh;
+    height:5vh;
+    border-radius:75% 0 75% 0
+  }
+  
+  #page4 .back:after {
+    content:'';
+    position:absolute;
+    top:24%;
+    left:43%;
+    background:radial-gradient(circle at 65% 45%, gray 15%, white 15%);
+    box-shadow:0 0 2px black;
+    width:2vh;
+    height:2vh;
+    border-radius:75% 75% 0% 75%;
+    transform:rotate(-45deg);
+  }
+  
+  #page5 .front {
+    background:rgb(0, 0, 0);
+    text-shadow:24px 24px rgb(199, 199, 199);
+    }
+  
+  @keyframes slide {
+    25% { text-shadow:-24px 24px rgb(199, 199, 199); }
+    50% { text-shadow:-24px -24px rgb(199, 199, 199); }
+    75% { text-shadow:24px -24px rgb(199, 199, 199); }
+    100% { text-shadow:24px 24px rgb(199, 199, 199); }
+  }
+  
+  #page5 .back {
+    font-size:2vh;
+    letter-spacing:2vh;
+    line-height:50vh;
+    font-weight:900;
+    text-align:left;
+    background:radial-gradient(circle at 30% 50%, rgb(65, 65, 65) 50%, rgb(160, 160, 160)40%);
+    color:rgb(255, 232, 255);
+    padding-left:2vh;
+    animation:cover 10s linear infinite;
+  }
+
+.foto  {
+    height: 46vh;
+    padding: 10px;
+    background-position: center;
+}
