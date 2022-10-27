@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navi {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.navi img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin-left: 40px;
+}
+
+.fitur {
+    font-size: 30px;
+    margin-right: 50px;
+}
+
+.fit {
+    margin-right: 40px;
+    color: white;
+    transition: .5s;
+}
+
+.fit:hover {
+    color: rgb(46, 38, 38);
+}
+
+a {
+    text-decoration: none;
+}
+
+.por img {
+    width: 100%;
+    height: 500px;
+}
+
+.por h1 {
+    text-align: center;
+}
