@@ -1,0 +1,270 @@
+#book {
+    width:60vw;
+    height:56vh;
+  /*   outline:1px solid black; */
+    position:absolute;
+    left:25vw;
+    top:30vh;
+    perspective:75vw;
+  }
+  
+  #book:before {
+    width:1%;
+    height:100%;
+    background:black;
+    content:'';
+    position:absolute;
+    left:49%;
+    top:0;
+    box-shadow:0px 10px 10px rgba(0,0,0,.75);
+    outline:1px solid black;
+  }
+  
+  .page {
+    width:50%;
+    height:100%;
+    background:radial-gradient(circle at 0% 100%, #777, #ddd 70%);
+    outline:1px solid black;
+    box-shadow:5px 10px 10px rgba(0,0,0,.15);
+    position:absolute;
+    left:50%;
+    top:0;
+    transition:z-index .01s linear 1s, transform 1.3s linear;
+    transform-origin:0% 50%;
+    z-index:5;
+    cursor:pointer;
+        
+    font-family:monospace;
+    text-align:center;
+    line-height:50vh;
+  }
+  
+  /* #page5 {
+    transform-origin:-1% 50% !important;
+  } */
+  
+  .front, .back {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+      
+    font-family:monospace;
+    text-align:center;
+    line-height:50vh;
+    
+    opacity:0;
+    transition:opacity .1s linear 1s;
+  }
+  .front {
+    opacity:1;
+  }
+  .back {
+    transform:scaleX(-1);
+  }
+  
+  input {
+    visibility:hidden;
+  }
+  
+  label {
+    width:100%;
+    height:100%;
+    z-index:99;
+    position:absolute;
+    left:0;
+    top:0;
+    margin:0;
+    padding:0;
+  /*   pointer-events:none; */
+  /*   visibility:hidden; */
+  /*   background:red; */
+  }
+  
+  input:checked + .page {
+    transform:rotateY(-180deg); 
+  }
+  
+  input:checked + .page .front {
+    opacity:0;  
+  }
+  input:checked + .page .back {
+    opacity:1;  
+  }
+  
+  #five:checked + .page {
+    z-index:5;
+  }
+  #four:checked + .page {
+    z-index:4;
+  }
+  #three:checked + .page {
+    z-index:3;
+  }
+  #two:checked + .page {
+    z-index:2;
+  }
+  #one:checked + .page {
+    z-index:1;
+  }
+  
+  body {
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    background-color:azure;
+  }
+  
+  /* interior pages styles */
+  #page1 .front {
+    font-size:4vh;
+    letter-spacing:2vh;
+    line-height:55vh;
+    font-weight:900;
+    text-align:center;
+    background: radial-gradient(circle at 50% 50%, gray 35%, #222 40%);
+    animation:cover 10s linear infinite;
+  }
+  @keyframes cover {
+    20% { color:lime }
+    40% { color:dodgerblue }
+    60% { color:gold }
+    80% { color:cyan }
+  }
+  
+  #page1 .back {
+    font-size:1.2em;
+    font-family:serif;
+    font-weight:900;
+    background:#222;
+    color: yellow;
+  }
+  
+  #page2 .front {
+    font-size:1.2em;
+    font-family:serif;
+    font-weight:900;
+    background: white;
+    color: dodgerblue;
+  }
+  
+  #page2 .back {
+    font-size:1.2em;
+    font-weight:100;
+    font-family:sans-serif;
+    background:white;
+    color:tomato;
+  }
+  
+  
+  #page3 .front {
+    background:#222;
+    color:white;
+    font-size:1.2em;
+    font-weight:900;
+    font-family:serif;
+    overflow:hidden;
+  }
+  
+  #page3 .back {
+    background:#222;
+    color:white;
+    font-size:1.2em;
+    font-weight:900;
+    font-family:serif;
+    overflow:hidden;
+  }
+  
+  #page4 {
+    overflow:hidden;
+    background:white;
+    
+  }
+  #page4 .front {
+    font-size:1.2em;
+    font-family:serif;
+    font-weight:900;
+    background: white;
+  animation:L 10s linear infinite;
+  }
+  @keyframes L {
+    50% { color:dodgerblue; background:white; }
+  }
+
+  #page4 .back {
+    font-size:1.2em;
+    font-weight:100;
+    font-family:serif;
+    background:white;
+    color:tomato;
+  }
+
+  
+  #page5 .front {
+    color:white;
+    font-size:1.2em;
+    font-weight:900;
+    font-family:serif;
+    background:#222;
+    }
+  
+  #page5 .back {
+    font-size:4vh;
+    letter-spacing:2vh;
+    line-height:55vh;
+    font-weight:900;
+    text-align:center;
+    background: radial-gradient(circle at 50% 50%, gray 35%, #222 40%);
+    color:magenta;
+    padding-left:2vh;
+    animation:cover 10s linear infinite;
+  }
+
+.foto{
+  height: 48vh;
+  padding: 5px;
+  border-radius: 20px;
+  background-position: center;
+}
+
+h2{
+  position: relative;
+  font-size: 4vw;
+  color:#ffffff;
+  -webkit-text-stroke: 0.3vw #ffffff ;
+  text-transform: uppercase;
+  text-align: left;
+  
+}
+h2::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #000000;
+  -webkit-text-stroke: 0vw black;
+  border-right: 2px solid #000000;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+@keyframes animate {
+  0%,10%,100%
+  {
+    width: 0;
+  }
+  70%,90%
+  {
+    width: 100%;
+  }
+}
+
+.buttom{
+  position: absolute;
+  top:95%;
+  right: 0;
+  width: 400px;
+  transform: translateY(-50%);
+}
