@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "foto",
+			"path": "../album/foto"
+		},
+		{
+			"name": "albumfoto",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "albumfoto"
+	}
+}
