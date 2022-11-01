@@ -1,0 +1,201 @@
+#book {
+    width:50vw;
+    height:50vh;
+  /*   outline:1px solid black; */
+    position:absolute;
+    left:25vw;
+    top:25vh;
+    perspective:75vw;
+  }
+  
+  #book:before {
+    width:1%;
+    height:100%;
+    background:#222;
+    content:'';
+    position:absolute;
+    left:49%;
+    top:0;
+    box-shadow:0px 10px 10px rgba(0,0,0,.75);
+    outline:1px solid black;
+  }
+  
+  .page {
+    width:50%;
+    height:100%;
+    background:radial-gradient(circle at 0% 100%, #777, #ddd 70%);
+    outline:1px solid black;
+    box-shadow:5px 10px 10px rgba(0,0,0,.15);
+    position:absolute;
+    left:50%;
+    top:0;
+    transition:z-index .01s linear 1s, transform 2s linear;
+    transform-origin:0% 50%;
+    z-index:5;
+    cursor:pointer;
+        
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align:center;
+    line-height:50vh;
+  }
+  
+  /* #page5 {
+    transform-origin:-1% 50% !important;
+  } */
+  
+  .front, .back {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+      
+    font-family:monospace;
+    text-align:center;
+    line-height:50vh;
+    
+    opacity:0;
+    transition:opacity .1s linear 1s;
+  }
+  .front {
+    opacity:1;
+  }
+  .back {
+    transform:scaleX(-1);
+  }
+  
+  input {
+    visibility:hidden;
+  }
+  
+  label {
+    width:100%;
+    height:100%;
+    z-index:99;
+    position:absolute;
+    left:0;
+    top:0;
+    margin:0;
+    padding:0;
+  /*   pointer-events:none; */
+  /*   visibility:hidden; */
+  /*   background:red; */
+  }
+  
+  input:checked + .page {
+    transform:rotateY(-180deg); 
+  }
+  
+  input:checked + .page .front {
+    opacity:0;  
+  }
+  input:checked + .page .back {
+    opacity:1;  
+  }
+  
+  #five:checked + .page {
+    z-index:5;
+  }
+  #four:checked + .page {
+    z-index:4;
+  }
+  #three:checked + .page {
+    z-index:3;
+  }
+  #two:checked + .page {
+    z-index:2;
+  }
+  #one:checked + .page {
+    z-index:1;
+  }
+  
+  body {
+    width:10vw;
+    height:10vh;
+    background-image:url(unduhan2.jpeg);
+    background-size: cover;
+  }
+  
+  /* interior pages styles */
+  #page1 .front {
+    font-size:3vh;
+    text-align:center;
+    color:rgb(69, 65, 161);
+    animation:cover 10s linear infinite;
+   background-image: url(Download.jpeg);
+   background-size: cover;
+   background-position: center;
+  }
+
+  @keyframes cover {
+    20% { color:rgb(75, 147, 75) }
+    40% { color:rgb(147, 63, 140) }
+    60% { color:rgb(82, 176, 197) }
+    80% { color:rgb(191, 228, 127) }
+  }
+  
+  #page1 .back {
+    background-image: url(album5.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  #page2 .front {
+    font-size:small ;
+    background-image: url(unduhan.jpeg);
+    background-size:cover ;
+    background-position: center;
+
+  }
+
+  #page2 .back {
+    background-image: url(album.jpg);
+    background-size:cover ;
+    background-position: center;
+  }
+  
+  #page3 .front {
+    font-size:small ;
+    background-image: url(unduhan.jpeg);
+    background-size:cover ;
+    background-position: center;
+  }
+  
+  #page3 .back {
+    background-image: url(album2.jpg);
+    background-size:cover ;
+    background-position: center;
+  }
+
+  #page4 .front {
+    font-size:small;
+    background-image: url(unduhan.jpeg);
+    background-size:cover ;
+    background-position: center;
+  }
+  
+  #page4 .back {
+    background-image: url(album4.jpg);
+    background-size:cover ;
+    background-position: center;
+  }
+ 
+  #page5 .front {
+    font-size:small;
+    background-image: url(unduhan.jpeg);
+    background-size:cover ;
+    background-position: center;
+  }
+
+  #page5 .back {
+    font-size:4vh;
+    text-align:center;
+    color:rgb(69, 65, 161);
+    animation:cover 10s linear infinite;
+    background-image: url(Download.jpeg);
+    background-size:cover ;
+    background-position: center;
+  }
+
+  /* interior pages styles */
+  
