@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Home */
+
+.back-g {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navigasi {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+}
+
+.navigasi ul li {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
+
+.navigasi ul li a {
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navigasi ul li a:hover {
+    color: white;
+}
+
+span {
+    color: red;
+}
+
+button {
+    border: solid rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 10px;
+    background-color: black;
+    color: red;
+    font-family: 'Poor Story', cursive;
+}
+
+
+button:hover {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: solid red;
+    cursor: pointer;
+}
+
+/* Album */
+.bgc {
+    background-color: rgb(32, 32, 32);
+}
+
+img {
+    height: 260px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.album {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cover Book */
+
+.cover {
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+    height: 300px;
+    z-index: 6;
+    position:absolute;
+    border-radius: 20px;
+}
+
+#c1:checked ~ .cover {
+    transform-origin: 0;
+    transform: rotateY(150deg);
+    transition: 1s;
+    filter:brightness(0);
+}
+
+#c1:not(:checked)~ .cover {
+    transform-origin: 0;
+    transition: 1s;
+}
+
+/* Halaman 1 */
+
+.halaman1 {
+    background-color: chocolate;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 5;
+    border-radius: 20px;
+}
+
+#c2:checked ~ .halaman1 {
+    transform-origin: 0;
+    transform: rotateY(150deg);
+    transition: 1s;
+    z-index: 6;
+    filter:brightness(0);
+}
+
+#c2:not(:checked)~ .halaman1 {
+    transform-origin: 0;
+    transition: 1s;
+}
+
+/* Halaman 2 */
+
+.halaman2 {
+    background-color: rgb(196, 91, 43);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 4;
+    border-radius: 20px;
+}
+
+#c3:checked ~ .halaman2 {
+    transform-origin: 0;
+    transform: rotateY(150deg);
+    transition: 1s;
+    z-index: 6;
+    filter:brightness(0);
+}
+
+#c3:not(:checked)~ .halaman2 {
+    transform-origin: 0;
+    transition: 1s;
+}
+
+/* Halaman 3 */
+
+.halaman3 {
+    background-color: rebeccapurple;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 3;
+    border-radius: 20px;
+}
+
+#c4:checked ~ .halaman3 {
+    transform-origin: 0;
+    transform: rotateY(150deg);
+    transition: 1s;
+    z-index: 6;
+    filter:brightness(0);
+}
+
+#c4:not(:checked)~ .halaman3 {
+    transform-origin: 0;
+    transition: 1s;
+}
+
+/* Halaman 4 */
+
+.halaman4 {
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 20px;
+}
+
+#c5:checked ~ .halaman4 {
+    transform-origin: 0;
+    transform: rotateY(150deg);
+    transition: 1s;
+    z-index: 8;
+    filter:brightness(0);
+}
+
+#c5:not(:checked)~ .halaman4 {
+    transform-origin: 0;
+    transition: 1s;
+}
+
+/* Last Page */
+
+.last-page {
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+    position:absolute;
+    border-radius: 20px;
+}
+
+#c6:checked ~ .last-page {
+    transform-origin: 0;
+    transform: rotateY(150deg);
+    transition: 1s;
+    z-index: 9;
+    filter: brightness(0);
+}
+
+#c6:not(:checked)~ .last-page {
+    transform-origin: 0;
+    transition: 1s;
+}
+
+/* Check Box */
+
+#c1,#c2,#c3,#c4,#c5,#c6 {
+    margin-top: 25%;
+}
+
+.cekbok:hover {
+    cursor: pointer;
+}
+
+.cekbok {
+    margin: 10px;
+}
+
+/* Font */
+
+.h1-home {
+    font-size: 45px;
+    color: red;
+    font-family: 'Poor Story', cursive;
+}
+
+
+.h1-album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    color: red;
+    font-size: 25px;
+}
+
+.h1-last-page {
+    font-size: 15px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    margin-top: 50%;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 50px;
+    color: red;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
