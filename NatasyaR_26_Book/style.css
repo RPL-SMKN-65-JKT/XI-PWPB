@@ -1,0 +1,182 @@
+#book {
+    width:50vw;
+    height:50vh;
+  /*   outline:1px solid black; */
+    position:absolute;
+    left:25vw;
+    top:25vh;
+    perspective:75vw;
+  }
+  
+  #book:before {
+    width:1%;
+    height:100%;
+    background:#222;
+    content:'';
+    position:absolute;
+    left:49%;
+    top:0;
+    box-shadow:0px 10px 10px rgba(0,0,0,.75);
+    outline:1px solid black;
+  }
+  
+  .page {
+    width:50%;
+    height:100%;
+    background:radial-gradient(circle at 0% 100%, #777, #ddd 70%);
+    outline:1px solid black;
+    box-shadow:5px 10px 10px rgba(0,0,0,.15);
+    position:absolute;
+    left:50%;
+    top:0;
+    transition:z-index .01s linear 1s, transform 2s linear;
+    transform-origin:0% 50%;
+    z-index:5;
+    cursor:pointer;
+        
+    font-family:monospace;
+    text-align:center;
+    line-height:50vh;
+  }
+  
+  /* #page5 {
+    transform-origin:-1% 50% !important;
+  } */
+  
+  .front, .back {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+      
+    font-family:monospace;
+    text-align:center;
+    line-height:50vh;
+    
+    opacity:0;
+    transition:opacity .1s linear 1s;
+  }
+  .front {
+    opacity:1;
+  }
+  .back {
+    transform:scaleX(-1);
+  }
+  
+  input {
+    visibility:hidden;
+  }
+  
+  label {
+    width:100%;
+    height:100%;
+    z-index:99;
+    position:absolute;
+    left:0;
+    top:0;
+    margin:0;
+    padding:0;
+  /*   pointer-events:none; */
+  /*   visibility:hidden; */
+  /*   background:red; */
+  }
+  
+  input:checked + .page {
+    transform:rotateY(-180deg); 
+  }
+  
+  input:checked + .page .front {
+    opacity:0;  
+  }
+  input:checked + .page .back {
+    opacity:1;  
+  }
+  
+  #five:checked + .page {
+    z-index:5;
+  }
+  #four:checked + .page {
+    z-index:4;
+  }
+  #three:checked + .page {
+    z-index:3;
+  }
+  #two:checked + .page {
+    z-index:2;
+  }
+  #one:checked + .page {
+    z-index:1;
+  }
+  
+  body {
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    background-color:rgb(0, 0, 0);
+  }
+  
+  /* interior pages styles */
+  #page1 .front {
+    font-size:2vh;
+    letter-spacing:2vh;
+    line-height:50vh;
+    font-weight:900;
+    text-align: center;
+    background: url(img/front.jpeg);
+    background-size: 400px;
+    color:rgb(0, 0, 0);
+    animation:cover 10s linear infinite;
+  }
+  @keyframes cover {
+    20% { color:rgb(0, 0, 0) }
+    40% { color:rgb(45, 45, 45) }
+    60% { color:rgb(142, 142, 142) }
+    80% { color:rgb(255, 255, 255) }
+  }
+  
+  #page1 .back {
+    color:white;
+    background-image: url(img/pg1.jpeg);
+    background-size: 400px;
+  }
+  
+  #page2 .front {
+    font-size: large;
+    background-color: rgb(235, 241, 255);
+  }
+  
+  #page2 .back {
+    background: url(img/pg2.jpeg);
+    background-size: 400px;
+  }
+
+  #page3 .front {
+    font-size: large;
+    background-color: rgb(235, 241, 255);
+  }
+
+  #page3 .back {
+    background: url(img/pg3.jpeg);
+    background-size: 400px;
+  }
+
+  #page4 .front {
+    font-size: large;
+    background-color: rgb(235, 241, 255);
+  }
+  
+  #page4 .back {
+    background: url(img/pg4.jpeg);
+    background-size: 400px;
+  }
+  
+  #page5 .front {
+    font-size: large;
+    background-color: rgb(235, 241, 255);
+  }
+  
+  #page5 .back {
+    background: url(img/back.jpeg);
+    background-size: 400px;
+  }
