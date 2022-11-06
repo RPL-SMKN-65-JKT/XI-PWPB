@@ -1,0 +1,38 @@
+<html>
+<head>
+    <!--membuat judul-->
+    <title>PARAMETER DALAM FUNGSI</title>
+    <!--memasuki javascript ke dalam html-->
+    <script language="javascript">
+    //untuk membungkus suatu proses agak tidak ditulis berulang kali//
+    function warning(pesan_kita)
+    {
+        //menampilkan pesan//
+        alert(pesan_kita)
+    }
+    //untuk membungkus suatu proses agar tidak ditulis berulang kali//
+    function password(pesan_promt,pesan_sukses,pesan_gagal)
+    {
+        //fungsi var yaitu untuk menyimpan suatu nilai//
+        var passwd = promt(pesan_promt);
+        //fungsi if untuk memjalanan suatu program//
+        if (passwd != 'petugas')
+    {
+        //menampilkan pesan//
+        alert(pesan_gagal);
+    }
+    //else dijalankan jika semua pilihan tidak memiliki nilai benar (true) pada kondisi yang ada//
+    else
+    {
+        //menampilkan pesan//
+        alert(pesan_sukses);
+    }
+    }
+    </script>
+    </head>
+    <body onload="warning('dilarang masuk selain petugas');">
+    <p><b>TEMPAT RAHASIA</b></p>
+    <p>Sekali lagi saya tegaskan jangan memasuki area ini selain petugas, BERBAHAYA!</p>
+    <a href="javascript: password('masukkan password:', 'password benar', 'password salah')">Masuk</a>
+</body>
+</html>
