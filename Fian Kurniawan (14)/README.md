@@ -5,7 +5,7 @@
 <h3> 👨🏻‍💻Tentang Saya </h3>
 
 - 🎓 Sekolah di SMKN 65 JAKARTA
-- ✍️ &nbsp; Newbie Programmer, Learning More Language
+- ✍️ &nbsp;Newbie Programmer, Learning More Language
 
 <h3> 👨 Bahasa Program dan Toolsnya </h3>
 
