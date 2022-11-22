@@ -1,0 +1,495 @@
+@font-face {
+  font-family: genshin;
+  src: url(../fonts/hywenhei85w/zh-cn-webfont.woff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: genshin;
+  flex-direction: row;
+}
+
+.judul {
+  position: absolute;
+  margin-bottom: 600px;
+}
+
+/* Background */
+.animated-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation-name: fadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 72s;
+  animation-direction: alternate;
+  z-index: -99;
+}
+
+.animated-image:nth-of-type(1) {
+  animation-delay: 64s;
+}
+
+.animated-image:nth-of-type(2) {
+  animation-delay: 56s;
+}
+
+.animated-image:nth-of-type(3) {
+  animation-delay: 48s;
+}
+.animated-image:nth-of-type(4) {
+  animation-delay: 40s;
+}
+.animated-image:nth-of-type(5) {
+  animation-delay: 32s;
+}
+.animated-image:nth-of-type(6) {
+  animation-delay: 24s;
+}
+.animated-image:nth-of-type(7) {
+  animation-delay: 16s;
+}
+.animated-image:nth-of-type(8) {
+  animation-delay: 8s;
+}
+.animated-image:nth-of-type(9) {
+  animation-delay: 0s;
+}
+
+.image-1 {
+  background-image: url(../img/Wallpapers/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-2 {
+  background-image: url(../img/Wallpapers/2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-3 {
+  background-image: url(../img/Wallpapers/3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-4 {
+  background-image: url(../img/Wallpapers/4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-5 {
+  background-image: url(../img/Wallpapers/5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-6 {
+  background-image: url(../img/Wallpapers/6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-7 {
+  background-image: url(../img/Wallpapers/7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-8 {
+  background-image: url(../img/Wallpapers/8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-9 {
+  background-image: url(../img/Wallpapers/9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.56);
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(140, 140, 140, 0.56);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Book */
+.buku {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.book {
+  position: relative;
+  width: 640px;
+  height: 305px;
+  transition: transform 0.5s;
+}
+
+.paper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  perspective: 1500px;
+}
+
+.front,
+.back {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.front {
+  z-index: 1;
+  backface-visibility: hidden;
+  border-left: 3px solid powderblue;
+}
+
+.back {
+  z-index: 0;
+}
+
+.front-content,
+.back-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-content {
+  transform: rotateY(180deg);
+}
+
+.nama-kiri {
+  width: 220px;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  position: absolute;
+  margin-bottom: 160px;
+  margin-right: 410px;
+  border-radius: 20px;
+  background-color: #cca574;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.nama-kiri h2 {
+  margin-left: 20px;
+}
+
+.teks-kiri {
+  color: white;
+  font-size: 12px;
+  width: 250px;
+  height: 100px;
+  margin-right: 380px;
+  margin-top: 190px;
+  padding: 15px;
+  overflow-x: hidden;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nama-kanan {
+  width: 220px;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  position: absolute;
+  margin-left: 380px;
+  margin-bottom: 160px;
+  border-radius: 20px;
+  background-color: #cca574;
+  justify-content: space-between;
+}
+
+.nama-kanan h2 {
+  margin-right: 20px;
+}
+
+.teks-kanan {
+  color: white;
+  font-size: 12px;
+  width: 250px;
+  height: 100px;
+  margin-left: 350px;
+  margin-top: 190px;
+  padding: 15px;
+  overflow-x: hidden;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#f1 {
+  background-image: url(../img/cover/Mondstadt.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#b1 {
+  background-image: url(../img/pageM/venti.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#f2 {
+  background-image: url(../img/pageM/jean.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#b2 {
+  background-image: url(../img/pageM/Albedo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#f3 {
+  background-image: url(../img/pageM/diluc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#b3 {
+  background-image: url(../img/pageM/amber.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#f4 {
+  background-image: url(../img/pageM/lisa.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#b4 {
+  background-image: url(../img/pageM/razor.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#f5 {
+  background-image: url(../img/pageM/bennet.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#b5 {
+  background-image: url(../img/pageM/kaeya.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#f6 {
+  background-image: url(../img/pageM/eula.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#b6 {
+  background-image: url(../img/pageM/noelle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#f7 {
+  background-image: url(../img/pageM/sucrose.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#b7 {
+  background-image: url(../img/pageM/barbara.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#f8 {
+  background-image: url(../img/pageM/fischl.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#b8 {
+  background-image: url(../img/pageM/rosaria.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#f9 {
+  background-image: url(../img/pageM/mona.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#b9 {
+  background-image: url(../img/pageM/diona.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#f10 {
+  background-image: url(../img/pageM/klee.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#b10 {
+  background-image: url(../img/cover/Mondstadt.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(1);
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+  transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+#prev-btn,
+#next-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.5s;
+}
+
+#prev-btn,
+#next-btn:focus {
+  outline: none;
+}
+
+#prev-btn,
+#next-btn:hover i {
+  color: #111;
+}
+
+#voice {
+  cursor: pointer;
+  height: 50px;
+  width: 53px;
+}
+
+.nama-kiri #voice {
+  padding: 12px;
+  outline: none;
+  background-color: #a6875e;
+  transition: all 0.2s;
+  filter: brightness(90%);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.nama-kanan #voice {
+  padding: 12px;
+  outline: none;
+  background-color: #a6875e;
+  transition: all 0.2s;
+  filter: brightness(90%);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#voice:hover {
+  filter: brightness(100%);
+}
+
+/* Paper stack order */
+#p1 {
+  z-index: 65;
+}
+
+#p2 {
+  z-index: 60;
+}
+
+#p3 {
+  z-index: 55;
+}
+
+#p4 {
+  z-index: 50;
+}
+#p5 {
+  z-index: 45;
+}
+#p6 {
+  z-index: 40;
+}
+#p7 {
+  z-index: 35;
+}
+#p8 {
+  z-index: 30;
+}
+#p9 {
+  z-index: 25;
+}
+#p10 {
+  z-index: 20;
+}
+
+/* Animation */
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
