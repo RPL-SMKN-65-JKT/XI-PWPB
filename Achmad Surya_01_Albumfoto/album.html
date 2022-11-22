@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Foto - Achmad Surya Saputra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body  onload="Informasi()">
+
+<div class="bgc">
+<div class="navigasi">
+  <nav>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <span>|</span>
+      <li><a href="album.html">ALBUM</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="album" data-aos="flip-left"
+data-aos-easing="ease-out-cubic"
+data-aos-duration="2500">
+  <input onclick="enableBtn" class="cekbok" type="checkbox" id="c1">
+  <input class="cekbok" type="checkbox" id="c2">
+  <input class="cekbok" type="checkbox" id="c3">
+  <input class="cekbok" type="checkbox" id="c4">
+  <input class="cekbok" type="checkbox" id="c5">
+  <input class="cekbok" type="checkbox" id="c6">
+  <div class="cover"><h1 class="h1-album">AS`2</h1></div>
+  <div class="halaman1"><img src="/img/1.jpeg" alt="">
+    <h3>Juara 1 Lomba Masak Pramuka.</h3>
+  </div>
+  <div class="halaman2"><img src="/img/2.jpeg" alt="">
+    <h3>Jauara 1 Classmeeting.</h3>
+  </div>
+  <div class="halaman3"><img src="/img/3.jpeg" alt="">
+    <h3>Pulang Ekstrakurikuler Coding.</h3>
+  </div>
+  <div class="halaman4"><img src="/img/4.jpeg" alt="">
+    <h3>Merayakan Juara Classmeeting.</h3>
+  </div>
+  <div class="last-page">
+    <h1 class="h1-last-page">Created By: Achmad Surya Saputra</h1>
+    </div>
+</div>
+
+
+</div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="script.js"></script>
+</body>
+
+</html>
