@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju-2.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css.css">
+    <title>Album</title>
+</head>
+<body onload="load()">  
+   <div class="book">
+    <input type="checkbox" id="c1">
+    <input type="checkbox" id="c2">
+    <input type="checkbox" id="c3">
+    <input type="checkbox" id="c4">
+    <div id="cover"><img src="foto3.jpeg"></div>
+    <div class="flip-book">
+        <div class="flip" id="p1">
+            <div class="back">
+                <img src="foto9.jpeg">
+                <label class="back-btn" for="c1"> <--</label>
+            </div>
+                <div class="front">
+                    <h2> Foto sekelas waktu kelas 10</h2>
+                   
+                    <label class="next-btn" for="c1"> --></label>
+                </div>
+        </div>
+        <div class="flip" id="p2">
+            <div class="back">
+                <img src="helmi.jpeg">
+                <label class="back-btn" for="c2"> <--</label>
+            </div>
+                <div class="front">
+                    <h2> Foto bersama ketos</h2>
+                    <p> Foto waktu kepin nyalon jadi ketos </p>
+                    <label class="next-btn" for="c2">  --></label>
+                </div>
+        </div>
+
+        <div class="flip" id="p3">
+            <div class="back">
+                <img src="helmi3.jpeg">
+                <label class="back-btn" for="c3"> <--       </label>
+            </div>
+                <div class="front">
+                    <h2> waktu kita kerjain tugas pak imam</h2>
+                    <label class="next-btn" for="c3">  --></label>
+                </div>
+        </div>
+    </div>
+   </div>
+   <script src="nzy.js"></script>
+</body>
+</html>
