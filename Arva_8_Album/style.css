@@ -1,0 +1,106 @@
+body {
+    background-color: #1D1D1D;
+    display: flex;
+}
+
+.Book-Front {
+    width: 50vh;
+    height: 80vh;
+    background-color: blue;
+    border-radius: .5vh 2vh 2vh .5vh;
+    margin: auto;
+    width: 50%;
+    margin-top: 50px;
+    transition: transform 0.8s;
+    text-align: center;
+}
+
+.Book-Front:hover {
+    cursor: pointer;
+}
+
+.Book-Back {
+    width: 50vh;
+    height: 80vh;
+    background-color: yellow;
+    border-radius: 2vh .5vh .5vh 2vh;
+    margin: auto;
+    width: 50%;
+    margin-top: 50px;
+    transition: transform 0.8s;
+    text-align: center;
+}
+
+.Book-Back:hover {
+    cursor: pointer;
+}
+
+/* rapihin animasi pas di uncheck cover buku depan */
+#front-check:not(:checked) ~ .Book-Front {
+    transform-origin: 100% 50%;
+}
+
+/* animasi pas di check cover buku depan */
+#front-check:checked ~ .Book-Front {
+    transform: rotateY(-180deg);
+    transform-origin: 100% 50%;
+}
+
+/* rapihin animasi pas di uncheck cover buku belakang */
+#back-check:not(:checked) ~ .Book-Back {
+    transform-origin: 0 40%;
+}
+
+/* animasi pas di check cover buku belakang */
+#back-check:checked ~ .Book-Back {
+    transform: rotateY(-180deg);
+    transform-origin: 0 40%;
+}
+
+/* EDIT IMAGE DOWN */
+
+img {
+    margin-top: 5vh;
+    max-width: 50%;
+    height: auto;
+    width: auto;
+    border-radius: 1vh;
+    transition: 1s;
+}
+
+h2 {
+    color: white;
+    transition: 1s;
+}
+
+#front-check:not(:checked) ~ .Book-Front .page-front {
+    opacity: 0;
+    display: none;
+}
+#front-check:checked ~ .Book-Front .page-front {
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+#front-check:not(:checked) ~ .Book-Front .page-back {
+    opacity: 1;
+}
+#front-check:checked ~ .Book-Front .page-back {
+    opacity: 0;
+    display: none;
+}
+
+#back-check:not(:checked) ~ .Book-Back .page-front {
+    opacity: 1;
+}
+#back-check:checked ~ .Book-Back .page-front {
+    opacity: 0;
+    display: none;
+}
+#back-check:not(:checked) ~ .Book-Back .page-back {
+    opacity: 0;
+    display: none;
+}
+#back-check:checked ~ .Book-Back .page-back {
+    transform: rotateY(180deg);
+    opacity: 1;
+}
