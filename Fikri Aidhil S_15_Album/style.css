@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: 260px;
+    width: 300px;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px ;   
+}
+
+.album {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(144, 131, 131);
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+
+}
+.about{
+    color: rgb(201, 153, 82);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48vh;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: 'poppins',sans-serif;
+}
+
+.h1-halakhir {
+    font-size: 15px;
+    font-family: 'poppins',sans-serif;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'poppins',sans-serif;
+    
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    font-family: 'poppins',sans-serif;
+    }
+
+.halut {
+    background-color: rgb(78, 78, 78);
+    width: 300px;
+    height: 300px;
+    z-index: 6;
+    position:absolute;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px ;
+    
+}
+
+#c1,#c2,#c3,#c4,#c5,#c6 {
+    margin-top:30%;
+}
+
+#c1:checked ~ .halut {
+    transform-origin: 0;
+    transform: rotateY(150deg);
+    transition: 1s;
+    filter:brightness(0);
+}
+
+#c1:not(:checked)~ .halut {
+    transform-origin: 0;
+    transition: 1s;
+}
+
+.halaman1 {
+    background-color: rgb(78, 78, 78);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 5;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px ;
+}
+
+
+
+#c2:checked ~ .halaman1 {
+    transform-origin: 0;
+    transform: rotateY(150deg);
+    transition: 1s;
+    z-index: 6;
+    filter:brightness(0);
+}
+
+#c2:not(:checked)~ .halaman1 {
+    transform-origin: 0;
+    transition: 1s;
+}
+
+.halaman2 {
+    background-color: rgb(78, 78, 78);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 4;
+    border-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px ;
+}
+
+#c3:checked ~ .halaman2 {
+    transform-origin: 0;
+    transform: rotateY(150deg);
+    transition: 1s;
+    z-index: 6;
+    filter:brightness(0);
+}
+
+#c3:not(:checked)~ .halaman2 {
+    transform-origin: 0;
+    transition: 1s;
+}
+.halaman3 {
+    background-color: rgb(78, 78, 78);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 3;
+    border-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px ;
+}
+
+#c4:checked ~ .halaman3 {
+    transform-origin: 0;
+    transform: rotateY(150deg);
+    transition: 1s;
+    z-index: 6;
+    filter:brightness(0);
+}
+
+#c4:not(:checked)~ .halaman3 {
+    transform-origin: 0;
+    transition: 1s;
+}
+.halaman4 {
+    background-color: rgb(78, 78, 78);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px ;
+}
+
+#c5:checked ~ .halaman4 {
+    transform-origin: 0;
+    transform: rotateY(150deg);
+    transition: 1s;
+    z-index: 8;
+    filter:brightness(0);
+}
+
+#c5:not(:checked)~ .halaman4 {
+    transform-origin: 0;
+    transition: 1s;
+}
+
+.halakhir {
+    background-color: rgb(78, 78, 78);
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+    position:absolute;
+    border-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px ;
+}
+
+#c6:checked ~ .halakhir {
+    transform-origin: 0;
+    transform: rotateY(150deg);
+    transition: 1s;
+    z-index: 9;
+    filter: brightness(0);
+}
+
+#c6:not(:checked)~ .halakhir {
+    transform-origin: 0;
+    transition: 1s;
+}
+
+.cb:hover {
+    cursor: pointer;
+}
+
+.cb {
+    margin: 10px;
+}

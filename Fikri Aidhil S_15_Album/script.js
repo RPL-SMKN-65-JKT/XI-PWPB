@@ -1,0 +1,3 @@
+function info(){
+    alert('SILAHKAN MENGGUNAKAN CHECKBOX DARI KIRI KE KANAN');
+}
