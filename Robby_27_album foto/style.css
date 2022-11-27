@@ -1,0 +1,233 @@
+#book {
+    width:50vw;
+    height:50vh;
+  /*   outline:1px solid black; */
+    position:absolute;
+    left:25vw;
+    top:25vh;
+    perspective:75vw;
+  }
+  
+  #book:before {
+    width:1%;
+    height:100%;
+    background:#222;
+    content:'';
+    position:absolute;
+    left:49%;
+    top:0;
+    box-shadow:0px 10px 10px rgba(0,0,0,.75);
+    outline:1px solid black;
+  }
+  
+  .page {
+    width:50%;
+    height:100%;
+    background:radial-gradient(circle at 0% 100%, #777, #ddd 70%);
+    outline:1px solid black;
+    box-shadow:5px 10px 10px rgba(0,0,0,.15);
+    position:absolute;
+    left:50%;
+    top:0;
+    transition:z-index .01s linear 1s, transform 2s linear;
+    transform-origin:0% 50%;
+    z-index:5;
+    cursor:pointer;
+        
+    font-family:monospace;
+    text-align:center;
+    line-height:50vh;
+  }
+  
+  /* #page5 {
+    transform-origin:-1% 50% !important;
+  } */
+  
+  .front, .back {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+      
+    font-family:monospace;
+    text-align:center;
+    line-height:50vh;
+    
+    opacity:0;
+    transition:opacity .1s linear 1s;
+  }
+  .front {
+    opacity:1;
+  }
+  .back {
+    transform:scaleX(-1);
+  }
+  
+  input {
+    visibility:hidden;
+  }
+  
+  label {
+    width:100%;
+    height:100%;
+    z-index:99;
+    position:absolute;
+    left:0;
+    top:0;
+    margin:0;
+    padding:0;
+  /*   pointer-events:none; */
+  /*   visibility:hidden; */
+  /*   background:red; */
+  }
+  
+  input:checked + .page {
+    transform:rotateY(-180deg); 
+  }
+  
+  input:checked + .page .front {
+    opacity:0;  
+  }
+  input:checked + .page .back {
+    opacity:1;  
+  }
+  
+  #five:checked + .page {
+    z-index:5;
+  }
+  #four:checked + .page {
+    z-index:4;
+  }
+  #three:checked + .page {
+    z-index:3;
+  }
+  #two:checked + .page {
+    z-index:2;
+  }
+  #one:checked + .page {
+    z-index:1;
+  }
+  
+  body {
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    background-color:azure;
+    background-image:url(wllper.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* interior pages styles */
+  #page1 .front {
+    font-size:4vh;
+    letter-spacing:1vh;
+    line-height:50vh;
+    font-weight:700;
+    text-align: center;
+    color:#162e06;
+    background-image: url(kecee2.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+  @keyframes cover {
+    20% { color:lime }
+    40% { color:dodgerblue }
+    60% { color:gold }
+    80% { color:cyan }
+  }
+  
+  #page1 .back {
+    background-image: url(gambar1.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #page2 .front {
+    font-size:small;
+    font-family:serif;
+    font-weight:900;
+    background-image: url(latar.jpg);
+    background-position: center;
+    background-size: cover;
+    
+  }
+  
+  #page2 .back {
+    background-image: url(gambar2.jpeg);
+    background-position: center;
+    background-size: cover
+  }
+  
+  #page3 .front {
+    color:black;
+    font-size:small;
+    font-weight:900;
+    font-family:serif;
+    overflow:hidden;
+    background-image: url(latar.jpg);
+    background-position: center;
+    background-size: cover;
+    
+  }
+  
+  #page3 .back {
+    background-image: url(gambar3.jpeg);
+    background-position: center;
+    background-size: cover
+  }
+  
+  #page4 .front {
+    color:black;
+    font-size:small;
+    font-weight:900;
+    font-family:serif;
+    overflow:hidden; 
+    background-image: url(latar.jpg);
+    background-position: center;
+    background-size: cover;
+    
+  }
+  
+  #page4 .back {
+    background-image: url(gambar4.jpeg);
+    background-position: center;
+    background-size: cover
+  }
+  
+  @keyframes bob {
+    25% { top:-10px }
+    50% { top:0px; }
+    75% { top:-10px; }
+  }
+  
+  #page5 .front {
+    font-size:small;
+    font-weight:900;
+    font-family:serif;
+    background-image: url(latar.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    }
+  
+  @keyframes slide {
+    25% { text-shadow:-24px 24px purple; }
+    50% { text-shadow:-24px -24px purple; }
+    75% { text-shadow:24px -24px purple; }
+    100% { text-shadow:24px 24px purple; }
+  }
+  
+  #page5 .back {
+    font-size:4vh;
+    letter-spacing:2vh;
+    line-height:50vh;
+    font-weight:900;
+    text-align:center;
+    color:rgb(0, 128, 122);
+    padding-left:2vh;
+    background-image: url(wllper2.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
