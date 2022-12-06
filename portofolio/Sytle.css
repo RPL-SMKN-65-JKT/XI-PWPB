@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-
 *, html, body {
     margin: 0;
     padding: 0;
@@ -78,7 +76,7 @@ nav{
 }
 
 .bghome {
-    background-image:  url(robiali.jpeg);
+    background-image:  url(obby.jpg);
     background-size: cover;
     background-position: center;
     height: 92vh;
