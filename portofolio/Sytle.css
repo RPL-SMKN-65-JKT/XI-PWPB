@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+nav{
+    background-color: grey; 
+    justify-content: space-around 
+}
+.navigasi { 
+  display: flex;
+  align-items: center;
+  height: 55px;
+  justify-content: space-around;
+  background-color: transparent;
+}
+.fContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.wrapper {
+    display: flex; /* membuat elemen sejajar ke samping */
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(163, 43, 73);
+    box-shadow: 0 0 15px 0 #222;
+    
+}
+
+.brand {
+    margin: 0;
+    padding: 0;
+}
+
+.brand > div > img {
+    width: 100px;
+    height: 100px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation > li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.navigation > li > a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navigation > li > a:hover {
+    color: rgb(227, 237, 245);
+    transition: all .3s ease-in-out;
+}
+
+.active {
+    background-color: rgb(163, 43, 73);
+    color:white;
+    padding: 15px;
+}
+
+.active hover {
+    color:white !important;
+}
+
+.bghome {
+    background-image:  url(robiali.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border: 3px solid white;
+    background-color: rgb(163, 43, 73);
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+h2 a {
+    text-decoration: none;
+    padding: 20px;
+}
+
+.ig a {
+    color: white;
+}
+
+.ig a:hover {
+    color: tomato;
+}
+
+.wa a {
+    color: white;
+}
+
+.wa a:hover {
+    color: rgb(98, 236, 105);
+}
+.wrapper {}
