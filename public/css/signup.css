@@ -1,0 +1,89 @@
+*, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-size: cover;
+    background-image: url("/img/perpus.jpg");
+}
+
+.container-card{
+    background: rgba(72, 187, 120, 0.5);
+    height: 100vh;
+    display: flex;
+}
+
+.card{
+    background-color: white;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding: 20px 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.card input{
+    border: 2px solid #D9D9D9;
+}
+
+
+.card img{
+    width: 10%;
+    margin-bottom: 20px;
+}
+
+.card h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.card button{
+    background: linear-gradient(180deg, #4C8EFE 0%, #48BB78 100%);
+    box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card p{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card a{
+    font-size: 14px;
+    color: blue;
+}
+
+@media (max-width: 390px) {
+    .card{
+        width: 90%;
+    }
+
+    .card img{
+        width: 25%;
+    }
+
+    .card h1{
+        font-size: 25px;
+        margin-bottom: 30px;
+        line-height: 30px;
+    }
+
+    .card label{
+        font-size: 20px;
+    }
+
+}

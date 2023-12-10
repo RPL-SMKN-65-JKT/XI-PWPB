@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("/img/Background\ 1.jpg");
+    background-size: cover;
+}
+
+.card{
+    background-color: white;
+    width: 40%;
+    height: auto;
+    margin: auto;
+    margin-top: 90px;
+    padding: 30px 40px;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.card h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card p{
+    color: gray;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.card h4{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.card a{
+    color: blue;
+    font-weight: 600;
+}
+
+button{
+    background: linear-gradient(180deg, #2D52D3 0%, #48BB78 100%) !important;
+}
+
+#remember{
+    box-shadow: inset 1.5px 1.5px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .card{
+        width: 80%;
+    }
+}
