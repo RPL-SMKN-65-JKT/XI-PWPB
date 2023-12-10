@@ -1,4 +1,4 @@
-## About Laravel
+## Anggota Kelompok
 
 -   Fathul Bari
 -   Kevin Aulia Reynaldi
