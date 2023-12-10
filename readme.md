@@ -27,3 +27,15 @@ Repositori lebih lengkapnya ada disini [Spanca Library Repository](https://githu
 7. Jalankan server: `php artisan serve`
 
 Terima kasih atas perhatiannya!
+
+## Salah Satu Screenshots Aplikasi
+**Admin**
+![dashboard](screenshots/dashboard.png)
+![daftar-user](screenshots/daftar-user.png)
+![daftar-buku](screenshots/daftar-buku.png)
+![catatan-dipinjam](screenshots/catatan-dipinjam.png)
+
+**User**
+![homepage](screenshots/homepage.png)
+![kumpulan-buku](screenshots/kumpulan-buku.png)
+![profile](screenshots/profile.png)
