@@ -1,0 +1,445 @@
+nav{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+*, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+    scroll-behavior: smooth;
+}
+
+
+.container-hero{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-image: url('https://img.freepik.com/premium-photo/3d-illustration-black-thick-books-isolated-black-background_351397-674.jpg?size=626&ext=jpg&uid=R56490936&ga=GA1.2.1149922704.1691593168&semt=ais');
+    background-blend-mode: color-burn;
+    background-position: center;
+    background-position-y: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container-hero .text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    margin-left: 60px;
+    align-items: start;
+}
+
+.container-hero .text h3{
+    font-size: 38px;
+    text-transform: capitalize;
+    color: white;
+}
+
+
+
+
+
+
+
+
+.container-hero-card{
+    height: auto;
+    margin-top: -100px;
+}
+
+.container-hero-card .bungkus-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+.container-hero-card .bungkus-card .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    min-height: 200px;
+    min-width: 200px;
+    transition: all .2s ease-in;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: white;
+    color: #5333F2;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.container-hero-card .bungkus-card .card h3{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.container-hero-card .bungkus-card .card i{
+    font-size: 40px;
+}
+
+.container-hero-card .bungkus-card .card:hover{
+    background-color: #5333F2;
+    color: white !important;
+}
+
+
+.container-about{
+    padding: 150px 0 80px 0;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-items: start;
+    
+
+}
+
+.container-about .image{
+    width: 40%;
+    min-width: 400px;
+}
+
+.container-about .image img{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.container-about .text{
+    width: 50%;
+}
+
+.container-about .text h3{
+    font-size: 53px;
+    line-height:50px;
+    color: #2E2D2D;
+    margin-bottom: 18px;
+}
+
+.container-about .text h3 span{
+    color: #5333F2;
+    
+}
+
+.container-about .text p{
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+
+.container-about .text button{
+    background-color: #5333F2;
+    font-size: 18px;
+    transition: all .2s ease-in;
+    border: 1px solid #5333F2;
+}
+
+
+.container-about .text button:hover{
+    background-color: white;
+    color: #5333F2;
+}
+
+
+.container-genre-card{
+    height: auto;
+    margin: 100px 0 80px 0;
+}
+
+
+
+.container-genre-card .bungkus-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px;
+    align-items: center;
+}
+
+.container-genre-card .bungkus-card .card{
+    min-width: 300px;
+    min-height: 500px;
+    width: 26%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 16px;
+    align-items: center;
+    transform-origin:right; /* Pusat transformasi di tengah gambar */
+    transition: all .6s cubic-bezier(0.24, 0.74, 0.58, 1) 0s;
+}
+
+.container-genre-card .judul{
+    width: 80%;
+    margin-left: -30px;
+    margin-bottom: -20px;
+}
+
+.container-genre-card .judul button{
+    color: #5333F2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 22px;
+    background-color: white;
+    padding: 6px 12px;
+    margin-bottom:14px;
+    border-radius: 20px;
+}
+
+.container-genre-card .judul h3{
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.container-genre-card .judul h3 span{
+    color: #5333F2;
+}
+
+.container-genre-card .bungkus-card .card .thumbnail{
+    width: 100% !important;
+    max-height: 230px;
+    /* max-width: 100%; */
+    box-sizing: border-box;
+    overflow: clip;
+    transform-origin:center; /* Pusat transformasi di tengah gambar */
+    transition: all .6s cubic-bezier(0.24, 0.74, 0.58, 1) 0s;
+    /* outline: #0e0d0f dashed 0.8px; */
+}
+
+.container-genre-card .bungkus-card .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.container-genre-card .bungkus-card .card:hover .thumbnail{
+    /* transform: matrix(1, 0, 0, 1, 0, 0); */
+    transform: scale(1.03);
+}
+
+
+.container-genre-card .bungkus-card .card .text{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 8px;
+    width: 95%;
+    text-align: start !important;
+}
+
+.container-genre-card .bungkus-card .card .text h3{
+    color: #0e0d0f;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.container-genre-card .bungkus-card .card .text p{
+    color: #67687a;
+    font-size: 16px;
+}
+
+
+.container-genre-card .bungkus-card .card .text .label{
+    font-size: 14px;
+    cursor: default;
+    color: white;
+    background-color: #5333F2;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.container-genre-card .bungkus-card .card .text .more-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #eaeaea;
+    padding: 15px 0px;
+}
+
+.container-genre-card .bungkus-card .card .text .more-detail .image{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: 50%;
+}
+
+.container-genre-card .bungkus-card .card .text .more-detail .image img{
+    width: 30%;
+}
+
+.container-genre-card .bungkus-card .card .text .more-detail .text{
+    width: 30%;
+}
+
+.container-genre-card .bungkus-card .card .text .more-detail p{
+    color: #0e0d0f;
+    font-weight: 500;
+}
+
+
+footer{
+    background-color : #0e0d0f;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+@media(max-width: 640px){
+    .container-genre-card .bungkus-card .card{
+        width: 80%;
+    }
+
+}
+
+
+.sign-button{
+    background-color: #5333F2;
+}
+
+
+.sign-top{
+    padding: 40px 0 !important;
+    padding-top: 100px !important;
+}
+
+.bg{
+    background-image: url('https://img.freepik.com/premium-photo/3d-illustration-black-thick-books-isolated-black-background_351397-674.jpg?size=626&ext=jpg&uid=R56490936&ga=GA1.2.1149922704.1691593168&semt=ais');
+    background-position: bottom;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+
+
+.container-buku{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+    margin: 60px 0px;
+}
+
+.container-buku .image{
+    width: 30%;
+}
+
+.container-buku .image img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.container-buku .text{
+    width: 65%;
+}
+
+.container-buku .text p{
+    font-size: 25px;
+    margin-bottom: 2px;
+}
+
+.container-buku .text p span{
+    color: #161616;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1100px){
+    
+}
+
+@media(max-width: 800px){
+    .sign-card{
+        width: 100%;
+    }
+}
+
+@media(max-width: 950px){
+    .container-hero .text{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px;
+        margin-left: 60px;
+        align-items: start;
+    }
+    .container-hero .text h3{
+        font-size: 30px;
+    }
+
+    .container-about{
+        gap: 60px;
+    }
+
+    .container-about .image{
+        width: 80%;
+        min-width: 300px;
+    }
+
+    .container-about .text{
+        width: 80%;
+    }
+
+}
+
+
+@media(max-width: 440px){
+    .container-hero-card .bungkus-card .card{
+        width: 80%;
+    }
+
+    .total{
+        grid-template-columns: 1fr;
+    }
+
+    .container-about .text h3{
+        font-size: 30px;
+        font-weight: bold;
+        line-height:40px;
+        color: #2E2D2D;
+        margin-bottom: 18px;
+    }
+}
