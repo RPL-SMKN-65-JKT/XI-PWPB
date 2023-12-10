@@ -14,7 +14,7 @@ Projek ini adalah Sistem Informasi Perpustakaan Online yang diberi nama "Spanca 
 - **Framework:** Laravel
 - **CSS Framework:** TailwindCss (Flowbite)
 
-## Repositori Terkait
+## Repositori Lebih Lengkapnya
 Repositori lebih lengkapnya ada disini [Spanca Library Repository](https://github.com/AlanPratama/SpancaLibrary), karena saya tidak bisa git push di repositori [XI-PWPB](https://github.com/RPL-SMKN-65-JKT/XI-PWPB) dikarenakan masalah authentikasi/hak akses.
 
 ## Panduan Instalasi
