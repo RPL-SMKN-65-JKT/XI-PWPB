@@ -27,7 +27,7 @@ Repositori lebih lengkapnya ada disini [Spanca Library Repository](https://githu
 7. Jalankan server: `php artisan serve`
 
 Terima kasih atas perhatiannya!
-
+**_yang memakai aplikasi ini tanpa izin [saya](https://github.com/AlanPratama). Saya do'akan untuk segere bertaubat, terima kasih..._**
 ## Sebagian Kecil Screenshots Aplikasi
 **Admin**
 ![dashboard](screenshots/dashboard.png)
