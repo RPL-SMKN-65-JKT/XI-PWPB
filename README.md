@@ -1,46 +1,34 @@
-# SMKN 65 XI - RPL
+# Doctrine DBAL
 
-Ini adalah kumpulan tugas PWPB kelas XI - RPL
+|                 [4.0-dev][4.0]                  |                     [3.6][3.6]                      |
+|:-----------------------------------------------:|:---------------------------------------------------:|
+|    [![GitHub Actions][GA 4.0 image]][GA 4.0]    |      [![GitHub Actions][GA 3.6 image]][GA 3.6]      |
+| [![AppVeyor][AppVeyor 4.0 image]][AppVeyor 4.0] |   [![AppVeyor][AppVeyor 3.6 image]][AppVeyor 3.6]   |
+| [![Code Coverage][Coverage image]][CodeCov 4.0] | [![Code Coverage][Coverage 3.6 image]][CodeCov 3.6] |
+|                       N/A                       | [![Type Coverage][TypeCov 3.6 image]][TypeCov 3.6]  |
 
-<h3>SMKN 65 XI RPL</h3>
+Powerful ***D***ata***B***ase ***A***bstraction ***L***ayer with many features for database schema introspection and schema management.
 
-[![SMKN65](https://img.shields.io/badge/SMKN%2065-SMKN%2065%20WEBSITE-green)](https://smkn65-jkt.sch.id/home)
+## More resources:
 
-<p>Nomor Absen</p>
+* [Website](http://www.doctrine-project.org/projects/dbal.html)
+* [Documentation](http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/)
+* [Issue Tracker](https://github.com/doctrine/dbal/issues)
 
-| No | Nama Siswa |
-| --- | --- |
-| `1` | *Achmad Surya Saputra* |
-| `2` | *Aisyah Imeria Putri* |
-| `3` | *Alan Pratama Rusfi* |
-| `4` | *Amanda Putri* |
-| `5` | *Amare Maliq Ardhana* |
-| `6` | *Anandita Nayla Atha* |
-| `7` | *Aqilah Irsalina Ahmad* |
-| `8` | *Arva Revanza Eferio Wempy Sono* |
-| `9` | *Bintang Aira Ramadhan* |
-| `10` | *Caesaro Kanahaya Widodo* |
-| `11` | *Dimas Prasetyo* |
-| `12` | *Dwi Kartika Sari* |
-| `13` | *Fathul Bari* |
-| `14` | *Fian Kurniawan* |
-| `15` | *Fikri Aidhil Setiansyah* |
-| `16` | *Fitri Aryani* |
-| `17` | *Helmi Fawwaz Raihan* |
-| `18` | *Kartika Aprillia Zahra* |
-| `19` | *Kevin Aulia Reynaldi* |
-| `20` | *Maryani* |
-| `21` | *Muhammad Arif Ibrahim* |
-| `22` | *Muhammad Revikhasha Farabi Putera*|
-| `23` | *Muhammad Zufar* |
-| `24` | *Nailah Afri Ramadhani* |
-| `25` | *Nassya Dyfebsa Gadyng Naretha* |
-| `26` | *Natasya Ramadhani* |
-| `27` | *Nur Ali Robby* |
-| `28` | *Pratama Ridho Priyanto* |
-| `29` | *Rahma Dini* |
-| `30` | *Ratna Solekhah* |
-| `31` | *Reinhard Togap Saragih Napitu* |
-| `32` | *Rizqi Ramadhan Putra* |
-| `33` | *Yurika Putri Wardiani* |
-| `34` | *Zikryandri Riedwan* |
+  [Coverage image]: https://codecov.io/gh/doctrine/dbal/branch/4.0.x/graph/badge.svg
+  [4.0]: https://github.com/doctrine/dbal/tree/4.0.x
+  [CodeCov 4.0]: https://codecov.io/gh/doctrine/dbal/branch/4.0.x
+  [AppVeyor 4.0]: https://ci.appveyor.com/project/doctrine/dbal/branch/4.0.x
+  [AppVeyor 4.0 image]: https://ci.appveyor.com/api/projects/status/i88kitq8qpbm0vie/branch/4.0.x?svg=true
+  [GA 4.0]: https://github.com/doctrine/dbal/actions?query=workflow%3A%22Continuous+Integration%22+branch%3A4.0.x
+  [GA 4.0 image]: https://github.com/doctrine/dbal/workflows/Continuous%20Integration/badge.svg
+
+  [Coverage 3.6 image]: https://codecov.io/gh/doctrine/dbal/branch/3.6.x/graph/badge.svg
+  [3.6]: https://github.com/doctrine/dbal/tree/3.6.x
+  [CodeCov 3.6]: https://codecov.io/gh/doctrine/dbal/branch/3.6.x
+  [AppVeyor 3.6]: https://ci.appveyor.com/project/doctrine/dbal/branch/3.6.x
+  [AppVeyor 3.6 image]: https://ci.appveyor.com/api/projects/status/i88kitq8qpbm0vie/branch/3.6.x?svg=true
+  [GA 3.6]: https://github.com/doctrine/dbal/actions?query=workflow%3A%22Continuous+Integration%22+branch%3A3.6.x
+  [GA 3.6 image]: https://github.com/doctrine/dbal/workflows/Continuous%20Integration/badge.svg?branch=3.6.x
+  [TypeCov 3.6]: https://shepherd.dev/github/doctrine/dbal
+  [TypeCov 3.6 image]: https://shepherd.dev/github/doctrine/dbal/coverage.svg
