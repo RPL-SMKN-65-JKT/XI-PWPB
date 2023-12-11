@@ -1,10 +1,19 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {
-    extend: {},
-    fontFamily: {
-      signature: ["Great Vibes"],
+    content: [
+        "./resources/**/*.blade.php",
+        "./resources/**/*.js",
+        "./resources/**/*.vue",
+        "./node_modules/tw-elements/dist/js/**/*.js",
+    ],
+    darkMode: "class",
+    theme: {
+        extend: {
+            colors: {
+                primary: "#2B2B2B",
+                secondary: "#FFEC39",
+            },
+        },
     },
-  },
-  plugins: [],
+    plugins: [require("tw-elements/dist/plugin.cjs")],
 };
